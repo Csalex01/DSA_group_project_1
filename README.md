@@ -56,10 +56,6 @@ typedef struct {
 	Cover cover;
 	Publisher publisher;
 } Book;
-
-/*
-	METHODS/FUNCTIONS
-*/
 ```
 
 ### CREATE() FUNCTIONS (OVERLOADED)
