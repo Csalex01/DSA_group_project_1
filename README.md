@@ -108,17 +108,6 @@ Publisher* create(Date foundationDate, char* name, char* address) {
 	return publisher;
 }
 
-typedef struct {
-	int pages;
-	float price;
-	char* title;
-	char* ISBN;
-	Person author;
-	Date publishDate;
-	Cover cover;
-	Publisher publisher;
-} Book;
-
 Book* create(char* ISBN, char* title, float price, int pages, Publisher publisher, Date publishDate, Person author, Cover cover) {
 	Book* book = (Book*)malloc(sizeof(Book));
 	
