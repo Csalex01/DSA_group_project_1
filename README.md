@@ -1,6 +1,10 @@
 # BOOKPOINT
-## Project Structure (might change)
+## Team Members
+- Csata László-Levente
+- Csillag Alex
+- Miklós Nándor
 
+## Project Structure (might change)
 ### ENUMS
 ```c
 enum Cover {
