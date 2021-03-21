@@ -1,5 +1,5 @@
 # DSA_group_project_1
-## Pseudocode (might change)
+## Project Structure (might change)
 
 ### ENUMS
 ```c
