@@ -1,10 +1,8 @@
 # DSA_group_project_1
 ## Pseudocode (might change)
 
+### ENUMS
 ```c
-/*
-	ENUM(S)
-*/
 enum Cover {
 	// https://www.blurb.com/blog/3-types-of-book-covers/
 	SOFTCOVER,
@@ -24,10 +22,9 @@ enum Nationality {
 	IRISH,
 	SWEDISH
 };
-
-/*
-	STRUCTURES
-*/
+```
+### STRUCTURES
+```c
 typedef struct {
 	int year;
 	int month;
@@ -63,8 +60,10 @@ typedef struct {
 /*
 	METHODS/FUNCTIONS
 */
+```
 
-// Methods for allocating memory
+### CREATE() FUNCTIONS (OVERLOADING)
+```c
 Date* create(int year, int month, int day) {
 	Date* date = (Date*)malloc(sizeof(Date));
 	
