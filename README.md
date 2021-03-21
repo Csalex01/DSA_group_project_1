@@ -62,7 +62,7 @@ typedef struct {
 */
 ```
 
-### CREATE() FUNCTIONS (OVERLOADING)
+### CREATE() FUNCTIONS (OVERLOADED)
 ```c
 Date* create(int year, int month, int day) {
 	Date* date = (Date*)malloc(sizeof(Date));
