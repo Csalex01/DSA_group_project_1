@@ -1,4 +1,4 @@
-# BOOKHOUSE/BOOKPOINT
+# BOOKPOINT
 ## Project Structure (might change)
 
 ### ENUMS
