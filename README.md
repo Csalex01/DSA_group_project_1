@@ -60,7 +60,7 @@ typedef struct {
 
 ### CREATE() FUNCTIONS (OVERLOADED)
 ```c
-Date* create(int year, int month, int day) {
+Date* createDate(int year, int month, int day) {
 	Date* date = (Date*)malloc(sizeof(Date));
 	
 	if(!date) {
@@ -75,7 +75,7 @@ Date* create(int year, int month, int day) {
 	return date;
 }
 
-Person* create(char* ID, char* firstName, char* middleName, char* lastName, Nationality nationality, Date birthDate) {
+Person* createPerson(char* ID, char* firstName, char* middleName, char* lastName, Nationality nationality, Date birthDate) {
 	Person* person = (Person*)malloc(sizeof(Person));
 	
 	if(!person) {
@@ -93,7 +93,7 @@ Person* create(char* ID, char* firstName, char* middleName, char* lastName, Nati
 	return perosn;
 }
 
-Publisher* create(Date foundationDate, char* name, char* address) {
+Publisher* createPublisher(Date foundationDate, char* name, char* address) {
 	Publisher* publisher = (Publisher*)malloc(sizeof(Publisher));
 	
 	if(!date) {
@@ -108,7 +108,7 @@ Publisher* create(Date foundationDate, char* name, char* address) {
 	return publisher;
 }
 
-Book* create(char* ISBN, char* title, float price, int pages, Publisher publisher, Date publishDate, Person author, Cover cover) {
+Book* createBook(char* ISBN, char* title, float price, int pages, Publisher publisher, Date publishDate, Person author, Cover cover) {
 	Book* book = (Book*)malloc(sizeof(Book));
 	
 	if(!date) {
