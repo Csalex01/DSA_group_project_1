@@ -1,6 +1,7 @@
 # DSA_group_project_1
 ## Pseudocode (might change)
 
+```c
 /*
 	ENUM(S)
 */
@@ -142,3 +143,4 @@ Book* create(char* ISBN, char* title, float price, int pages, Publisher publishe
 	
 	return book;
 }
+```
