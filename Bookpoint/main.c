@@ -8,6 +8,5 @@
 #include "enums.h"
 
 int main() {
-    printf("Under construction...");
     return 0;
 }
