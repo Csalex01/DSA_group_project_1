@@ -1,6 +1,7 @@
 #ifndef BOOKPOINT_BOOK_H
 #define BOOKPOINT_BOOK_H
 
+#include <stdbool.h>
 #include "../Person/Person.h"
 #include "../Date/Date.h"
 #include "../Publisher/Publisher.h"
@@ -10,7 +11,9 @@ typedef struct {
     int numberOfPages;
     float price;
     char* title;
-    char* ISBM;
+    char* ISBN;
+
+    bool ebook;
 
     Person author;
     Date publishDate;
@@ -18,7 +21,7 @@ typedef struct {
     Publisher publisher;
 } Book;
 
-Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover);
+Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook);
 
 void destroyBook(Book* book);
 
