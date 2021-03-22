@@ -8,6 +8,6 @@
 #include "enums.h"
 
 int main() {
-    printf("Under construction...");
+    printf("Alex a mester");
     return 0;
 }

@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.c" "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Book/Book.c.obj"
-  "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.c" "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Date/Date.c.obj"
-  "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Person/Person.c" "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Person/Person.c.obj"
-  "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Publisher/Publisher.c" "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj"
-  "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/main.c" "E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/main.c.obj"
+  "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/Book/Book.c" "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Book/Book.c.obj"
+  "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/Date/Date.c" "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Date/Date.c.obj"
+  "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/Person/Person.c" "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Person/Person.c.obj"
+  "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/Publisher/Publisher.c" "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj"
+  "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/main.c" "C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
