@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_Csata_Laszlo_Levente_Aut_C\DSA_group_project_1\Bookpoint
+CMAKE_SOURCE_DIR = "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_Csata_Laszlo_Levente_Aut_C\DSA_group_project_1\Bookpoint\cmake-build-debug
+CMAKE_BINARY_DIR = "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_Csata_Laszlo_Levente_Aut_C\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_Csata_Laszlo_Levente_Aut_C\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_Csata_Laszlo_Levente_Aut_C\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -250,6 +250,33 @@ Publisher/Publisher.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.s
 .PHONY : Publisher/Publisher.c.s
 
+Utility/utils.obj: Utility/utils.c.obj
+
+.PHONY : Utility/utils.obj
+
+# target to build an object file
+Utility/utils.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Utility/utils.c.obj
+.PHONY : Utility/utils.c.obj
+
+Utility/utils.i: Utility/utils.c.i
+
+.PHONY : Utility/utils.i
+
+# target to preprocess a source file
+Utility/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Utility/utils.c.i
+.PHONY : Utility/utils.c.i
+
+Utility/utils.s: Utility/utils.c.s
+
+.PHONY : Utility/utils.s
+
+# target to generate assembly for a file
+Utility/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Utility/utils.c.s
+.PHONY : Utility/utils.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -298,6 +325,9 @@ help:
 	@echo ... Publisher/Publisher.obj
 	@echo ... Publisher/Publisher.i
 	@echo ... Publisher/Publisher.s
+	@echo ... Utility/utils.obj
+	@echo ... Utility/utils.i
+	@echo ... Utility/utils.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

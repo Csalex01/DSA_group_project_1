@@ -1,3 +1,3 @@
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_Csata_Laszlo_Levente_Aut_C/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/Bookpoint.dir
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/cmake-build-debug/CMakeFiles/rebuild_cache.dir

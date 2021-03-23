@@ -4,10 +4,15 @@
 #include "Date/Date.h"
 #include "Person/Person.h"
 #include "Publisher/Publisher.h"
+#include "Utility/utils.h"
 
 #include "enums.h"
 
 int main() {
-    printf("Under Construction");
+
+    // Fix date input file
+    fixDate("dates_old.txt");
+
     return 0;
 }
+

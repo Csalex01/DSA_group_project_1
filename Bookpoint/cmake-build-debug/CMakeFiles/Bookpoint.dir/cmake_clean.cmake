@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Bookpoint.dir/Date/Date.c.obj"
   "CMakeFiles/Bookpoint.dir/Person/Person.c.obj"
   "CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj"
+  "CMakeFiles/Bookpoint.dir/Utility/utils.c.obj"
   "CMakeFiles/Bookpoint.dir/main.c.obj"
   "libBookpoint.dll.a"
 )
