@@ -3,18 +3,60 @@
 EMPTY
 
 ## Team Members
-- Csata László-Levente
+- Csata Levente
 - Csillag Alex
 - Miklós Nándor
 
-## Roles
-- Csata László-Levente
-- Csillag Alex
-  - Menu
-- Mikls Nándor
-## Project Structure (might change)
+## TODO
+- Generate 100 random dates [link](https://www.random.org/calendar-dates/?mode=advanced)
+	- YEAR(int) MONTH(int) DAY(int)
 
-# Project Structure (might change)
+- Generate 30 random people [link](https://www.fakenamegenerator.com/advanced.php)
+	- ID (random number between 0 and 10000, could be randomly generated)
+	- First Name
+	- Middle Name (not required)
+	- Last Name
+	- Birth Date
+	- Nationality (based on enum)
+		- Exclude: ICELANDIC
+	- Only NON-SPECIAL characters (A..Z, a..z)
+	- ID(string) FIRST_NAME(string) *MIDDLE_NAME(string)* LAST_NAME(string) YEAR(int) MONTH(int) DAY(int) NATIONALITY(int/enum)
+	
+- Generate 10 publishers
+	- Name (name of organization, only one word)
+	- Address [link](https://www.fakenamegenerator.com/advanced.php)
+	- Date (from generated dates)
+	- NAME(string) ZIP_CODE(int) CITY_NAME(string) STREET_NAME(string) HOUSE_NUMBER(int)
+	
+- Generate 30 books
+	- 1 person could have multiple books
+	- Author (from generated people)
+	- ISBN code (13 digits, string)
+	- Title (max 20 characters)
+	- Price (between 10 euro and 300 euro)
+	- Number of page (between 10 and 1000)
+	- E-book (boolean)
+	- Cover (from enum)
+	- Publish date
+	- Publisher (from generated publishers)
+	- AUTHOR_ID(int) ISBN(int) TITLE(string) YEAR(int) MONTH(int) DAY(int) PUBLISHER_NAME(string) COVER(int/enum) EBOOK(bool) PRICE(float)
+
+## Roles
+- Csata Levente
+	- Publisher generation
+	- Publisher functions
+	- Date functions
+- Csillag Alex
+	- Date generation
+	- Book generation
+	- Menu functions
+	- Book functions
+- Miklós Nándor
+	- People generation
+	- Person functions
+
+# Project Structure (might change in the future)
+
 ## Operations by struct
 ### Date (4 functions + 2)
 - Sort by year (ascending)
