@@ -4,6 +4,12 @@
 - Csillag Alex
 - Miklós Nándor
 
+## Roles
+- Csata László-Levente
+- Csillag Alex
+  - Menu
+- Mikls Nándor
+
 # Project Structure (might change)
 ## Operations by struct
 ### Date (4 functions + 2)
