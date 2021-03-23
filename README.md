@@ -1,4 +1,7 @@
 # BOOKPOINT
+## Description
+
+
 ## Team Members
 - Csata László-Levente
 - Csillag Alex
@@ -36,7 +39,7 @@
 - Does a publisher exist based on a given address
 - Get publishers by foundation date between two dates
 
-## Book (16 functions + 2)
+## Book (18 functions + 2)
 - Get books based on page numbers
 - Get books based on price
 - Get books between two price values
@@ -52,4 +55,6 @@
 - Sort books by page number (descending)
 - Sort books by publish date (ascending)
 - Sort books by publish date (descending)
-- Is it an ebook?
+- E-Book?
+- Add book from user input
+- Delete book
