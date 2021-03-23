@@ -18,7 +18,6 @@ EMPTY
 	- Last Name
 	- Birth Date
 	- Nationality (based on enum)
-		- Exclude: ICELANDIC
 	- Only NON-SPECIAL characters (A..Z, a..z)
 	- ID(string) FIRST_NAME(string) *MIDDLE_NAME(string)* LAST_NAME(string) YEAR(int) MONTH(int) DAY(int) NATIONALITY(int/enum)
 	
