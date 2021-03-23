@@ -9,6 +9,7 @@
 - Csillag Alex
   - Menu
 - Mikls Nándor
+## Project Structure (might change)
 
 # Project Structure (might change)
 ## Operations by struct
