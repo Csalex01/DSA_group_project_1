@@ -8,5 +8,6 @@
 #include "enums.h"
 
 int main() {
+    printf("Alex a mester");
     return 0;
 }
