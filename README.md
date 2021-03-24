@@ -8,10 +8,10 @@ EMPTY
 - Miklós Nándor
 
 ## TODO
-- Generate 100 random dates ([link])(https://www.random.org/calendar-dates/?mode=advanced) (DONE)
+- Generate 100 random dates [(link)](https://www.random.org/calendar-dates/?mode=advanced) (DONE)
 	- YEAR(int) MONTH(int) DAY(int)
 
-- Generate 30 random people ([link])(https://www.fakenamegenerator.com/advanced.php)
+- Generate 30 random people [(link])(https://www.fakenamegenerator.com/advanced.php)
 	- ID (random number between 0 and 10000, could be randomly generated)
 	- First Name
 	- Middle Name (not required)
@@ -23,7 +23,7 @@ EMPTY
 	
 - Generate 10 publishers
 	- Name (name of organization, only one word)
-	- Address ([link])(https://www.fakenamegenerator.com/advanced.php)
+	- Address [(link)](https://www.fakenamegenerator.com/advanced.php)
 	- Date (from generated dates)
 	- NAME(string) ZIP_CODE(int) CITY_NAME(string) STREET_NAME(string) HOUSE_NUMBER(int)
 	
