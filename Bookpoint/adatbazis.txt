@@ -1,12 +1,12 @@
-BookJACK 4056	Biloxi Conner_Street 39531
-booktool 1185	Nampa Young_Road 83651	
-AUDIE	2040 Greenville Fort_Street 27834
-BookWonk 2604	Boise Poplar_Chase_Lane 83704
+BookJACK 4056Biloxi Conner_Street 39531
+booktool 1185Nampa Young_Road 83651
+AUDIE2040 Greenville Fort_Street 27834
+BookWonk 2604Boise Poplar_Chase_Lane 83704
 TANDES 1347 Reading Stanton_Hollow_Road 01867
-BOOKCHIMP 7252 Attala	Szilagyi_Erzsebet 47
+BOOKCHIMP 7252 AttalaSzilagyi_Erzsebet 47
 Litery 6753 Tape Nagytetenyi_ut 49
 WINKER 8666 Bedegker Nanas_ut 37
-BIBLIC 7361 Kaposszekcso Szilagyi_Erzsebet 86	
+BIBLIC 7361 Kaposszekcso Szilagyi_Erzsebet 86
 mystor 4173 Nagyrabe Tompa 7
 PAGEST 1096 Berlin Brandenburgische 81
 paperm 1729 Weggun Adenauerallee 92
@@ -27,4 +27,4 @@ NOVELISH 4912 Harpelunde 94
 Gbook 9314 SKELLEFTEA Bodbysund 76
 Movel 9401 ROKNAS Lidbovagen 42
 Schood 3701 BACKARYD Kvarngatu 37
-Triplepaper 7707 GARPENBERG Laktargatan 37                                                                                                                
+Triplepaper 7707 GARPENBERG Laktargatan 37 
