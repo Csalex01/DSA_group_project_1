@@ -42,7 +42,7 @@ EMPTY
 
 ## Roles
 - Csata Levente
-	- Publisher generation
+	- Publisher generation (DONE)
 	- Publisher functions
 	- Date functions
 - Csillag Alex
