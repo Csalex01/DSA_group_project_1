@@ -11,7 +11,7 @@ EMPTY
 - Generate 100 random dates [(link)](https://www.random.org/calendar-dates/?mode=advanced) (DONE)
 	- YEAR(int) MONTH(int) DAY(int)
 
-- Generate 30 random people [(link])(https://www.fakenamegenerator.com/advanced.php)
+- Generate 30 random people [(link)](https://www.fakenamegenerator.com/advanced.php)
 	- ID (random number between 0 and 10000, could be randomly generated)
 	- First Name
 	- Middle Name (not required)
