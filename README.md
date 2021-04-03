@@ -1,4 +1,4 @@
-# BOOKPOINT
+# Group Project: BOOKPOINT
 ## Description
 EMPTY
 
@@ -8,10 +8,10 @@ EMPTY
 - Miklós Nándor
 
 ## TODO
-- Generate 100 random dates [link](https://www.random.org/calendar-dates/?mode=advanced)
+- Generate 100 random dates [(link)](https://www.random.org/calendar-dates/?mode=advanced) (DONE)
 	- YEAR(int) MONTH(int) DAY(int)
 
-- Generate 30 random people [link](https://www.fakenamegenerator.com/advanced.php)
+- Generate 30 random people [(link)](https://www.fakenamegenerator.com/advanced.php)
 	- ID (random number between 0 and 10000, could be randomly generated)
 	- First Name
 	- Middle Name (not required)
@@ -21,9 +21,9 @@ EMPTY
 	- Only NON-SPECIAL characters (A..Z, a..z)
 	- ID(string) FIRST_NAME(string) *MIDDLE_NAME(string)* LAST_NAME(string) YEAR(int) MONTH(int) DAY(int) NATIONALITY(int/enum)
 	
-- Generate 10 publishers
+- Generate 10 publishers (30, DONE)
 	- Name (name of organization, only one word)
-	- Address [link](https://www.fakenamegenerator.com/advanced.php)
+	- Address [(link)](https://www.fakenamegenerator.com/advanced.php)
 	- Date (from generated dates)
 	- NAME(string) ZIP_CODE(int) CITY_NAME(string) STREET_NAME(string) HOUSE_NUMBER(int)
 	
@@ -42,11 +42,11 @@ EMPTY
 
 ## Roles
 - Csata Levente
-	- Publisher generation
+	- Publisher generation (DONE)
 	- Publisher functions
 	- Date functions
 - Csillag Alex
-	- Date generation
+	- Date generation (DONE)
 	- Book generation
 	- Menu functions
 	- Book functions

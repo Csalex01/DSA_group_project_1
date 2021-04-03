@@ -1,0 +1,30 @@
+BookJACK 4056Biloxi Conner_Street 39531
+booktool 1185Nampa Young_Road 83651
+AUDIE2040 Greenville Fort_Street 27834
+BookWonk 2604Boise Poplar_Chase_Lane 83704
+TANDES 1347 Reading Stanton_Hollow_Road 01867
+BOOKCHIMP 7252 AttalaSzilagyi_Erzsebet 47
+Litery 6753 Tape Nagytetenyi_ut 49
+WINKER 8666 Bedegker Nanas_ut 37
+BIBLIC 7361 Kaposszekcso Szilagyi_Erzsebet 86
+mystor 4173 Nagyrabe Tompa 7
+PAGEST 1096 Berlin Brandenburgische 81
+paperm 1729 Weggun Adenauerallee 92
+Randa 3832 Kissenbruck Pohlstrasse 49
+LiteraryWork 8235 Weilheim Bleibtreustrabe 61
+BLOOT 7407 Heilbronn_Neckargartach Kurfuerstendamm 45
+pUBLE 9723 LE_ROBERT Adolphe_Wurtz 92
+NBOOK 06130 GRASSE Ferdinand_de_Lesseps 13
+PAPERBlaze 3177 COLOMIERS Place_de_la_Gare 47
+POPAUTHOR 6211 HENIN_BEAUMONT rue_des_Lacs 20
+HBOOK 6402 Nepezzano_TE Via_Scuderlando 62
+Publes 6302 Smerillo_AP Via_Loreto 93
+WRITTIA 1008 Drusacco_TO Via_Giberti 4
+Mbook 1209 Kongshojvej Kobenhavn_K 97
+Bookl 9530 Havnegad Stovring 6
+VIDDIA 8680 Ry Muusgarden 4
+NOVELISH 4912 Harpelunde 94
+Gbook 9314 SKELLEFTEA Bodbysund 76
+Movel 9401 ROKNAS Lidbovagen 42
+Schood 3701 BACKARYD Kvarngatu 37
+Triplepaper 7707 GARPENBERG Laktargatan 37 
