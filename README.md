@@ -54,17 +54,15 @@ EMPTY
 	- People generation
 	- Person functions
 
-# Project Structure (might change in the future)
-
 ## Operations by struct
 ### Date (4 functions + 2)
 - Sort by year (ascending)
 - Sort by year (descending)
-- Matching date count
-- Is coeval? (> 200.01.01)
+- Matching date count (Will be done later)
+- Is coeval? (>= 200.01.01)
 - ...
 
-## Person (6 functions + 2)
+### Person (6 functions + 2)
 - Get people by nationality
 - Get person by ID
 - Sort by ID
@@ -73,14 +71,14 @@ EMPTY
 - Get adults (age >= 18)
 - ...
 
-## Publisher (5 functions + 2)
+### Publisher (5 functions + 2)
 - Sort by foundation year
 - Get publisher by name
 - Get publisher by address
 - Does a publisher exist based on a given address
 - Get publishers by foundation date between two dates
 
-## Book (18 functions + 2)
+### Book (18 functions + 2)
 - Get books based on page numbers
 - Get books based on price
 - Get books between two price values
