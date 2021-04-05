@@ -13,10 +13,10 @@ Date* createDate(int year, int month, int day);
 Date* readDatesFromFile(char* fileName);
 
 void destroyDate(Date* date);
-void sortYearsByAscending(Date* date, int n);
-void sortYearsByDescending(Date* date, int n);
+void sortYearsByAscending(int n);
+void sortYearsByDescending(int n);
 bool isCoeval(Date* date);
 
-void printDates(Date* dates, int n);
+void printDates(int n);
 
 #endif //BOOKPOINT_DATE_H

@@ -88,7 +88,7 @@ bool checkExistenceByAddress(char *address) {
 int publisherCountBetweenDates(Date date1, Date date2) {
     int count = 0;
 
-    for (int i = 0; i < PUBLISHER_COUNT; i++)
+    for (int i = 0; i < PUBLISHER_COUNT; i++) {
         if ((
                     (date1.year <= PUBLISHERS[i].foundationDate.year) &&
                     (date1.month <= PUBLISHERS[i].foundationDate.month) &&
@@ -100,6 +100,9 @@ int publisherCountBetweenDates(Date date1, Date date2) {
             )) {
             count++;
         }
+    }
+
+    return count;
 }
 
 void destroyPublisher(Publisher *publisher) {
