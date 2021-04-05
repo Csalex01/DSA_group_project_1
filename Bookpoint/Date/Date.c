@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stdbool.h"
+#include <stdbool.h>
+
 #include "Date.h"
+#include "../Utility/utils.h"
 
 Date* createDate(int year, int month, int day) {
     Date* date = (Date*)malloc(sizeof(Date));
@@ -15,6 +17,7 @@ Date* createDate(int year, int month, int day) {
     date->month = month;
     date->day = day;
 
+    DATE_COUNT++;
     return date;
 }
 
