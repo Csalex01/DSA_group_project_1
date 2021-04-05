@@ -76,7 +76,7 @@ EMPTY
 - Get publisher by name
 - Get publisher by address
 - Does a publisher exist based on a given address
-- Get publishers by foundation date between two dates
+- Get publisher count by foundation date between two dates
 
 ### Book (18 functions + 2)
 - Get books based on page numbers
