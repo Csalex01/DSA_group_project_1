@@ -30,7 +30,6 @@ int main() {
     Date date2 = DATES[70];
 
     printf("\n%i", publisherCountBetweenDates(date1, date2));
-
-
+    
     return 0;
 }
