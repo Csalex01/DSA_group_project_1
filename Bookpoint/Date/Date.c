@@ -21,7 +21,7 @@ Date* createDate(int year, int month, int day) {
     return date;
 }
 
-Date* readFromFile(char* fileName) {
+Date* readDatesFromFile(char* fileName) {
     FILE* fin = fopen(fileName, "rt");
 
     if(!fin) {
@@ -49,6 +49,8 @@ Date* readFromFile(char* fileName) {
 
         dates[i] = *createDate(year, month, day);
     }
+
+    fclose(fin);
 
     return dates;
 }

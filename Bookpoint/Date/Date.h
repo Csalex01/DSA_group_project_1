@@ -10,7 +10,7 @@ typedef struct {
 } Date;
 
 Date* createDate(int year, int month, int day);
-Date* readFromFile(char* fileName);
+Date* readDatesFromFile(char* fileName);
 
 void destroyDate(Date* date);
 void sortYearsByAscending(Date* date, int n);

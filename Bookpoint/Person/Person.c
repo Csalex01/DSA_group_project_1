@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 #include "Person.h"
+#include "../Utility/utils.h"
+
 
 Person* createPerson(char* ID, char* firstName, char* middleName, char* lastName, enum Nationality nationality, Date birthDate) {
     Person* person = (Person*)malloc(sizeof(Person));

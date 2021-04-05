@@ -2,10 +2,8 @@
 #define BOOKPOINT_BOOK_H
 
 #include <stdbool.h>
-#include "../Person/Person.h"
-#include "../Date/Date.h"
-#include "../Publisher/Publisher.h"
-#include "../enums.h"
+
+#include "../Utility/utils.h"
 
 typedef struct {
     int numberOfPages;

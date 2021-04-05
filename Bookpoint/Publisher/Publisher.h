@@ -11,14 +11,15 @@ typedef struct {
 } Publisher;
 
 Publisher* createPublisher(Date foundationDate, char* name, char* address);
-Publisher* getPublisherByName(Publisher* publishers, int n, char* name);
-Publisher* getPublisherByAddress(Publisher* publishers, int n, char* address);
+Publisher* readPublishersFromFile(char* fileName);
+Publisher* getPublisherByName(char* name);
+Publisher* getPublisherByAddress(char* address);
 
-bool checkExistenceByAddress(Publisher* publishers, int n, char* address);
+bool checkExistenceByAddress(char* address);
 
-int publisherCountBetweenDates(Publisher* publishers, int n);
+int publisherCountBetweenDates(Date date1, Date date2);
 
-void destroyPublisher(Publisher* publisher);
-void sortByYear(Publisher* publishers);
+void sortByYear();
+void destroyPublisher();
 
 #endif //BOOKPOINT_PUBLISHER_H
