@@ -30,8 +30,8 @@ EMPTY
 	- 1 person could have multiple books
 	- Author (from generated people)
 	- ISBN code (13 digits, string)
-	- Title (max 20 characters)
-	- Price (between 10 euro and 300 euro)
+	- Title (max 30 characters)
+	- Price (between 10 euro and 100 euro)
 	- Number of page (between 10 and 1000)
 	- E-book (boolean)
 	- Cover (from enum)
