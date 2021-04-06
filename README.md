@@ -37,7 +37,7 @@ EMPTY
 	- Cover (from enum)
 	- Publish date
 	- Publisher (from generated publishers)
-	- AUTHOR_ID(int) ISBN(int) TITLE(string) YEAR(int) MONTH(int) DAY(int) PUBLISHER_NAME(string) COVER(int/enum) EBOOK(bool) PRICE(float)
+	- AUTHOR_ID(int) ISBN(string) TITLE(string) YEAR(int) MONTH(int) DAY(int) PUBLISHER_NAME(string) COVER(int/enum) EBOOK(bool) PRICE(float)
 
 ## Roles
 - Csata Levente
