@@ -14,12 +14,11 @@ EMPTY
 - Generate 30 random people [(link)](https://www.fakenamegenerator.com/advanced.php)
 	- ID (random number between 0 and 10000, could be randomly generated)
 	- First Name
-	- Middle Name (not required)
 	- Last Name
 	- Birth Date
 	- Nationality (based on enum)
 	- Only NON-SPECIAL characters (A..Z, a..z)
-	- ID(string) FIRST_NAME(string) *MIDDLE_NAME(string)* LAST_NAME(string) YEAR(int) MONTH(int) DAY(int) NATIONALITY(int/enum)
+	- ID(string) FIRST_NAME(string) LAST_NAME(string) YEAR(int) MONTH(int) DAY(int) NATIONALITY(int/enum)
 	
 - Generate 10 publishers (30, DONE)
 	- Name (name of organization, only one word)
