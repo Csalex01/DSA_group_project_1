@@ -1,6 +1,17 @@
 # Group Project: BOOKPOINT
 ## Description
-EMPTY
+
+Bookpoint is a free and open source CLI solution for libraries to manage their books. 
+
+With this tool, you can list all the available books, apply a filter on them, check for existence based on attributes, and many more!
+If you are interested in a book and want to dig deeper about a publisher, writer, etc..., you can do that!
+
+You can execute these commands using the user-friendly, easy to use, innovative and intuitive menu system, which was developed by a team of engineers and graphics designers. 
+
+All of this could not have been possible without a whole team of psychiatrists.. believe me, they needed it.
+
+Credits: Csata Levente, Csillag Alex, Miklós Nándor
+This project is under GPL-3.0 license. (You can read more about it by checking out the LICENSE file below, they don't pay me enough for explaining it.)
 
 ## Team Members
 - Csata Levente
@@ -55,6 +66,7 @@ EMPTY
 
 ## Operations by struct
 ### Date (4 functions + 2)
+
 - Sort by year (ascending) (DONE)
 - Sort by year (descending) (DONE)
 - Matching date count (Will be done later)
