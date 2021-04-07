@@ -46,7 +46,7 @@ EMPTY
 	- Date functions
 - Csillag Alex
 	- Date generation (DONE)
-	- Book generation
+	- Book generation (DONE)
 	- Menu functions
 	- Book functions
 - Miklós Nándor
