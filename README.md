@@ -8,7 +8,7 @@ If you are interested in a book and want to dig deeper about a publisher, writer
 
 You can execute these commands using the user-friendly, easy to use, innovative and intuitive menu system, which was developed by a team of engineers and graphics designers. 
 
-All of this could not have been possible without a whole team of psychiatrists.. believe me, they needed it.
+All of this could not have been possible without a whole team of psychiatrists.. believe me, they needed them.
 
 Credits: Csata Levente, Csillag Alex, Miklós Nándor
 
