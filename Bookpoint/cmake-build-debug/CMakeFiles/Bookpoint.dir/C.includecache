@@ -13,8 +13,6 @@ stdio.h
 -
 ../Utility/utils.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
-Book.h
-E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
 stdbool.h
@@ -26,9 +24,31 @@ E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_
 ../Publisher/Publisher.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Publisher/Publisher.h
 
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+Date.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
+../Utility/utils.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
+
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
 stdbool.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/stdbool.h
+
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Person/Person.c
+stdio.h
+-
+stdlib.h
+-
+Person.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Person/Person.h
+../Utility/utils.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Person/Person.h
 ../enums.h
@@ -36,9 +56,29 @@ E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_
 ../Date/Date.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
 
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Publisher/Publisher.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+Publisher.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Publisher/Publisher.h
+../Utility/utils.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
+
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Publisher/Publisher.h
 ../Date/Date.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
+
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.c
+stdio.h
+-
+string.h
+-
+utils.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
 string.h
@@ -57,4 +97,10 @@ E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/enums.h
+
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/main.c
+stdio.h
+-
+Utility/utils.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
 

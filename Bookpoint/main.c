@@ -4,7 +4,7 @@
 
 int main() {
 
-    // TODO: Interactive menu
+    /// TODO: Interactive menu
 
     // Initializing global variables
     DATE_COUNT = 0;

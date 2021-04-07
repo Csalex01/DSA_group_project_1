@@ -15,9 +15,9 @@ Date* createDate(int year, int month, int day);
 Date* readDatesFromFile(char* fileName);
 
 void destroyDate(Date* date);
-void sortYearsByAscending(int n);
-void sortYearsByDescending(int n);;
+void sortYearsByAscending();
+void sortYearsByDescending();
 
-void printDates(int n);
+void printDates();
 
 #endif //BOOKPOINT_DATE_H
