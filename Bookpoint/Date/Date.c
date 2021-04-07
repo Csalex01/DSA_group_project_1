@@ -78,6 +78,13 @@ Date* readDatesFromFile(char* fileName) {
     return dates;
 }
 
+/// This function returns whether two dates are equal or not
+bool equalDates(Date* date1, Date* date2) {
+    return date1->year == date2->year &&
+            date1->month == date2->month &&
+            date1->day == date2->day;
+}
+
 /// This function destroys a given DATE (frees it from memory)
 void destroyDate(Date* date) {
     free(date);

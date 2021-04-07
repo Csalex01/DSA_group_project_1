@@ -23,9 +23,6 @@ Person* createPerson(char* ID, char* firstName, char* lastName, enum Nationality
     person->nationality = nationality;
     person->birthDate = birthDate;
 
-    /// Increase the AUTHOR counter
-    AUTHOR_COUNT++;
-
     return person;
 }
 
@@ -46,6 +43,9 @@ Person* readPeopleFromFile(char* fileName) {
     /// Get how many PERSONS are there
     int n;
     fscanf(fin, "%i", &n);
+
+    /// Assign n to AUTHOR_COUNT (it won't change!)
+    AUTHOR_COUNT = n;
 
     /// Allocate n PERSON in memory
     Person* people = (Person*)calloc(n, sizeof(Person));

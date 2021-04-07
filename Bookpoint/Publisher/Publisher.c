@@ -59,6 +59,9 @@ Publisher *readPublishersFromFile(char *fileName) {
         return NULL;
     }
 
+    /// Set the seed for pseudo-random number generation
+    srand(time(NULL));
+
     /// Temporary variables
     char name[25], address[75];
     Date date;

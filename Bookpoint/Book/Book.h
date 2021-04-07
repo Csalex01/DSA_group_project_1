@@ -23,12 +23,24 @@ typedef struct {
 } Book;
 
 /// Functions associated with this data structure
-Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook);
+Book* createBook(char* ISBN, char*   title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook);
 Book* readBooksFromFile(char* fileName);
 
+Book* getBookBasedOnISBN(char* ISBN);
+Book* getBookBasedOnTitle(char* title);
+
 bool isCoeval(Book* book);
+bool isEbook(Book* book);
 
 void printBook(Book* book);
+void printBooksBasedOnAuthorID(char* authorID);
+void printBooksBasedOnPageNumbers(int pageNumber);
+void printBooksBasedOnPriceRange(float minPrice, float maxPrice);
+void printBooksBasedOnPublishDate(Date* date);
+void printBooksBasedOnCoverType(enum Cover cover);
+
+
+
 void destroyBook(Book* book);
 
 #endif //BOOKPOINT_BOOK_H

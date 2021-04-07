@@ -3,6 +3,7 @@
 
 #include <string.h>
 #include <stdbool.h>
+#include <time.h>
 
 #include "../Date/Date.h"
 #include "../Person/Person.h"

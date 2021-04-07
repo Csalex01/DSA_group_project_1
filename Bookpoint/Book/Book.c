@@ -71,6 +71,9 @@ Book *readBooksFromFile(char *fileName) {
         return NULL;
     }
 
+    /// Set the seed for pseudo-random number generation
+    srand(time(NULL));
+
     /// Temporary variables
     char title[31], ISBN[14];
 
@@ -124,11 +127,36 @@ Book *readBooksFromFile(char *fileName) {
     return books;
 }
 
+/// This function returns a BOOK with the given ISBN
+Book* getBookBasedOnISBN(char* ISBN) {
+    for(int i = 0; i < BOOK_COUNT; i++)
+        if(!strcmp(BOOKS[i].ISBN, ISBN))
+            return &BOOKS[i];
+
+    return NULL;
+}
+
+/// This function returns a BOOK with the given title
+Book* getBookBasedOnTitle(char* title) {
+    for(int i = 0; i < BOOK_COUNT; i++)
+        if(!strcmp(BOOKS[i].title, title))
+            return &BOOKS[i];
+
+    return NULL;
+}
+
 /// This function returns whether a BOOK is coeval or not
 bool isCoeval(Book* book){
-    return book->author.birthDate.year >= 2000 &&
-           book->author.birthDate.month >= 1 &&
-           book->author.birthDate.day >= 1;
+    return book->publishDate.year >= 2000 &&
+            book->publishDate.month >= 1 &&
+            book->publishDate.day >= 1;
+}
+
+
+/// This function returns whether a BOOK is electrically available or not
+// This function might be redundant because we have direct access to the attribute
+bool isEbook(Book* book) {
+    return book->ebook;
 }
 
 /// This function prints a given BOOK to the standard output
@@ -152,7 +180,66 @@ void printBook(Book *book) {
     }
     printf(")\n");
     printf("\tElectrically available: %s\n", (book->ebook ? "Yes" : "No"));
-    printf("\tPrice: %.2f\n\n", book->price);
+    printf("\tPrice: %.2f\n", book->price);
+
+    printf("\tCoeval? ");
+    if(isCoeval(book))
+        printf("Yes");
+    else
+        printf("No");
+    printf("\n\n");
+}
+
+/// This function prints out all the BOOKS by the given author
+void printBooksBasedOnAuthorID(char* authorID) {
+    printf("\nBooks with the author %s: \n", authorID);
+
+    for(int i = 0; i < BOOK_COUNT; i++)
+        if(!strcmp(BOOKS[i].author.ID, authorID))
+            printBook(&BOOKS[i]);
+}
+
+void printBooksBasedOnPageNumbers(int pageNumber) {
+    printf("\nBooks with the page number of %i: \n", pageNumber);
+
+    for(int i = 0; i < BOOK_COUNT; i++)
+        if(BOOKS[i].numberOfPages == pageNumber)
+            printBook(&BOOKS[i]);
+}
+
+/// This function prints out all the BOOKS between two prices
+void printBooksBasedOnPriceRange(float minPrice, float maxPrice) {
+    printf("\nBooks in the price range [EUR%.2f, EUR%.2f]: \n", minPrice, maxPrice);
+
+    for(int i = 0; i < BOOK_COUNT; i++)
+        if(minPrice <= BOOKS[i].price && BOOKS[i].price <= maxPrice)
+            printBook(&BOOKS[i]);
+}
+
+/// This function prints out all the BOOKS with a given publish date
+void printBooksBasedOnPublishDate(Date* date) {
+    printf("\nBooks with the publish date of %i %i %i: \n", date->year, date->month, date->day);
+
+    for(int i = 0; i < BOOK_COUNT; i++)
+        if(equalDates(&BOOKS[i].publishDate, date))
+            printBook(&BOOKS[i]);
+}
+
+/// This function prints out all the BOOKS with a given cover type
+void printBooksBasedOnCoverType(enum Cover cover) {
+    printf("Books with the cover type of ");
+    switch (cover) {
+        case SOFTCOVER: printf("SOFTCOVER"); break;
+        case HARDCOVER_IMAGEWRAP: printf("HARDCOVER \\w IMAGEWRAP"); break;
+        case HARDCOVER_DUSTJACKET: printf("HARDCOVER \\w DUSTJACKET"); break;
+        default: printf("UNKNOWN");
+    }
+
+    printf(": \n");
+
+    for(int i = 0; i < BOOK_COUNT; i++)
+        if(BOOKS[i].cover == cover)
+            printBook(&BOOKS[i]);
 }
 
 /// This function destroys a given BOOK (frees it from the memory)

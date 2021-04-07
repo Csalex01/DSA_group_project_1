@@ -19,6 +19,5 @@ int main() {
     /// TODO: Interactive menu (WORK IN PROGRESS)
 
     activateMenu();
-
     return 0;
 }
