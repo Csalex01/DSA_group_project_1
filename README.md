@@ -30,14 +30,14 @@ EMPTY
 	- 1 person could have multiple books
 	- Author (from generated people)
 	- ISBN code (13 digits, string)
-	- Title (max 20 characters)
-	- Price (between 10 euro and 300 euro)
+	- Title (max 30 characters)
+	- Price (between 10 euro and 100 euro)
 	- Number of page (between 10 and 1000)
 	- E-book (boolean)
 	- Cover (from enum)
 	- Publish date
 	- Publisher (from generated publishers)
-	- AUTHOR_ID(int) ISBN(int) TITLE(string) YEAR(int) MONTH(int) DAY(int) PUBLISHER_NAME(string) COVER(int/enum) EBOOK(bool) PRICE(float)
+	- AUTHOR_ID(int) ISBN(string) TITLE(string) YEAR(int) MONTH(int) DAY(int) PUBLISHER_NAME(string) COVER(int/enum) EBOOK(bool) PRICE(float)
 
 ## Roles
 - Csata Levente
@@ -46,7 +46,7 @@ EMPTY
 	- Date functions
 - Csillag Alex
 	- Date generation (DONE)
-	- Book generation
+	- Book generation (DONE)
 	- Menu functions
 	- Book functions
 - Miklós Nándor
