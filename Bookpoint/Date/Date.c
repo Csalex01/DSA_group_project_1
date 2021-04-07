@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 #include "Date.h"
 #include "../Utility/utils.h"
@@ -51,7 +50,7 @@ Date* readDatesFromFile(char* fileName) {
 
     /// If the memory allocation has failed
     if(!dates) {
-        printf("Faile to allocate temporary vector for dates");
+        printf("Failed to allocate temporary vector for dates");
 
         /// Close the file, because it was opened earlier
         fclose(fin);
@@ -111,7 +110,7 @@ void sortYearsByDescending(){
     }
 }
 
-/// This function prints a given DATE to the standardd output
+/// This function prints a given DATE to the standard output
 void printDates() {
     for(int i = 0; i < DATE_COUNT; i++)
         printf("%i %i %i\n", DATES[i].year, DATES[i].month, DATES[i].day);

@@ -114,16 +114,16 @@ void printPerson(Person* person) {
     printf("\tNationality: %i (", person->nationality);
 
     switch (person->nationality) {
-        case 0: printf("HUNGARIAN"); break;
-        case 1: printf("ROMANIAN"); break;
-        case 2: printf("GERMAN"); break;
-        case 3: printf("FRENCH"); break;
-        case 4: printf("AMERICAN"); break;
-        case 5: printf("BRITISH"); break;
-        case 6: printf("DANISH"); break;
-        case 7: printf("ICELANDIC"); break;
-        case 8: printf("IRISH"); break;
-        case 9: printf("SWEDISH"); break;
+        case HUNGARIAN: printf("HUNGARIAN"); break;
+        case ROMANIAN: printf("ROMANIAN"); break;
+        case GERMAN: printf("GERMAN"); break;
+        case FRENCH: printf("FRENCH"); break;
+        case AMERICAN: printf("AMERICAN"); break;
+        case BRITISH: printf("BRITISH"); break;
+        case DANISH: printf("DANISH"); break;
+        case ICELANDIC: printf("ICELANDIC"); break;
+        case IRISH: printf("IRISH"); break;
+        case SWEDISH: printf("SWEDISH"); break;
         default: printf("UNKNOWN");
     }
 

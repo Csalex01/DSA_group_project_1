@@ -143,9 +143,9 @@ void printBook(Book *book) {
 
     printf("\tCover: %i (", book->cover);
     switch (book->cover) {
-        case 0: printf("SOFTCOVER"); break;
-        case 1: printf("HARDCOVER \\w IMAGEWRAP"); break;
-        case 2: printf("HARDCOVER \\w DUSTJACKET"); break;
+        case SOFTCOVER: printf("SOFTCOVER"); break;
+        case HARDCOVER_IMAGEWRAP: printf("HARDCOVER \\w IMAGEWRAP"); break;
+        case HARDCOVER_DUSTJACKET: printf("HARDCOVER \\w DUSTJACKET"); break;
         default: printf("UNKNOWN");
     }
     printf(")\n");
