@@ -11,6 +11,7 @@ You can execute these commands using the user-friendly, easy to use, innovative 
 All of this could not have been possible without a whole team of psychiatrists.. believe me, they needed it.
 
 Credits: Csata Levente, Csillag Alex, Miklós Nándor
+
 This project is under GPL-3.0 license. (You can read more about it by checking out the LICENSE file below, they don't pay me enough for explaining it.)
 
 ## Team Members
