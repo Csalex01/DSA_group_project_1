@@ -95,19 +95,19 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 
 ### Book
 - Is coeval? (>= 2000.01.01) (DONE)
-- Print books based on page numbers
-- Print books based on price range
-- Get book based on ISBN
-- Get book based on title
-- Print book based on author
-- Print books based on publish date
-- Print books between two publish dates
-- Print books based on publisher
-- Print books based on cover type
-- Sort books by price (ascending)
-- Sort books by price (descending)
-- Sort books by page number (ascending)
-- Sort books by page number (descending)
-- Sort books by publish date (ascending)
-- Sort books by publish date (descending)
+- Print books based on page numbers (DONE)
+- Print books based on price range (DONE)
+- Get book based on ISBN (DONE)
+- Get book based on title (DONE)
+- Print book based on author (DONE)
+- Print books based on publish date (DONE)
+- Print books between two publish dates (DONE)
+- Print books based on publisher (DONE)
+- Print books based on cover type (DONE)
+- Sort books by price (ascending) (DONE)
+- Sort books by price (descending) (DONE)
+- Sort books by page number (ascending) (DONE)
+- Sort books by page number (descending) (DONE)
+- Sort books by publish year (ascending) (DONE)
+- Sort books by publish year (descending) (DONE)
 - E-Book? (DONE)

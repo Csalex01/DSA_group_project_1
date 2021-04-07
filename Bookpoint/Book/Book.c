@@ -128,34 +128,34 @@ Book *readBooksFromFile(char *fileName) {
 }
 
 /// This function returns a BOOK with the given ISBN
-Book* getBookBasedOnISBN(char* ISBN) {
-    for(int i = 0; i < BOOK_COUNT; i++)
-        if(!strcmp(BOOKS[i].ISBN, ISBN))
+Book *getBookBasedOnISBN(char *ISBN) {
+    for (int i = 0; i < BOOK_COUNT; i++)
+        if (!strcmp(BOOKS[i].ISBN, ISBN))
             return &BOOKS[i];
 
     return NULL;
 }
 
 /// This function returns a BOOK with the given title
-Book* getBookBasedOnTitle(char* title) {
-    for(int i = 0; i < BOOK_COUNT; i++)
-        if(!strcmp(BOOKS[i].title, title))
+Book *getBookBasedOnTitle(char *title) {
+    for (int i = 0; i < BOOK_COUNT; i++)
+        if (!strcmp(BOOKS[i].title, title))
             return &BOOKS[i];
 
     return NULL;
 }
 
 /// This function returns whether a BOOK is coeval or not
-bool isCoeval(Book* book){
+bool isCoeval(Book *book) {
     return book->publishDate.year >= 2000 &&
-            book->publishDate.month >= 1 &&
-            book->publishDate.day >= 1;
+           book->publishDate.month >= 1 &&
+           book->publishDate.day >= 1;
 }
 
 
 /// This function returns whether a BOOK is electrically available or not
 // This function might be redundant because we have direct access to the attribute
-bool isEbook(Book* book) {
+bool isEbook(Book *book) {
     return book->ebook;
 }
 
@@ -173,17 +173,24 @@ void printBook(Book *book) {
 
     printf("\tCover: %i (", book->cover);
     switch (book->cover) {
-        case SOFTCOVER: printf("SOFTCOVER"); break;
-        case HARDCOVER_IMAGEWRAP: printf("HARDCOVER \\w IMAGEWRAP"); break;
-        case HARDCOVER_DUSTJACKET: printf("HARDCOVER \\w DUSTJACKET"); break;
-        default: printf("UNKNOWN");
+        case SOFTCOVER:
+            printf("SOFTCOVER");
+            break;
+        case HARDCOVER_IMAGEWRAP:
+            printf("HARDCOVER \\w IMAGEWRAP");
+            break;
+        case HARDCOVER_DUSTJACKET:
+            printf("HARDCOVER \\w DUSTJACKET");
+            break;
+        default:
+            printf("UNKNOWN");
     }
     printf(")\n");
     printf("\tElectrically available: %s\n", (book->ebook ? "Yes" : "No"));
-    printf("\tPrice: %.2f\n", book->price);
+    printf("\tPrice: EUR%.2f\n", book->price);
 
     printf("\tCoeval? ");
-    if(isCoeval(book))
+    if (isCoeval(book))
         printf("Yes");
     else
         printf("No");
@@ -191,19 +198,19 @@ void printBook(Book *book) {
 }
 
 /// This function prints out all the BOOKS by the given author
-void printBooksBasedOnAuthorID(char* authorID) {
+void printBooksBasedOnAuthorID(char *authorID) {
     printf("\nBooks with the author %s: \n", authorID);
 
-    for(int i = 0; i < BOOK_COUNT; i++)
-        if(!strcmp(BOOKS[i].author.ID, authorID))
+    for (int i = 0; i < BOOK_COUNT; i++)
+        if (!strcmp(BOOKS[i].author.ID, authorID))
             printBook(&BOOKS[i]);
 }
 
 void printBooksBasedOnPageNumbers(int pageNumber) {
     printf("\nBooks with the page number of %i: \n", pageNumber);
 
-    for(int i = 0; i < BOOK_COUNT; i++)
-        if(BOOKS[i].numberOfPages == pageNumber)
+    for (int i = 0; i < BOOK_COUNT; i++)
+        if (BOOKS[i].numberOfPages == pageNumber)
             printBook(&BOOKS[i]);
 }
 
@@ -211,17 +218,17 @@ void printBooksBasedOnPageNumbers(int pageNumber) {
 void printBooksBasedOnPriceRange(float minPrice, float maxPrice) {
     printf("\nBooks in the price range [EUR%.2f, EUR%.2f]: \n", minPrice, maxPrice);
 
-    for(int i = 0; i < BOOK_COUNT; i++)
-        if(minPrice <= BOOKS[i].price && BOOKS[i].price <= maxPrice)
+    for (int i = 0; i < BOOK_COUNT; i++)
+        if (minPrice <= BOOKS[i].price && BOOKS[i].price <= maxPrice)
             printBook(&BOOKS[i]);
 }
 
 /// This function prints out all the BOOKS with a given publish date
-void printBooksBasedOnPublishDate(Date* date) {
+void printBooksBasedOnPublishDate(Date *date) {
     printf("\nBooks with the publish date of %i %i %i: \n", date->year, date->month, date->day);
 
-    for(int i = 0; i < BOOK_COUNT; i++)
-        if(equalDates(&BOOKS[i].publishDate, date))
+    for (int i = 0; i < BOOK_COUNT; i++)
+        if (equalDates(&BOOKS[i].publishDate, date))
             printBook(&BOOKS[i]);
 }
 
@@ -229,62 +236,104 @@ void printBooksBasedOnPublishDate(Date* date) {
 void printBooksBasedOnCoverType(enum Cover cover) {
     printf("Books with the cover type of ");
     switch (cover) {
-        case SOFTCOVER: printf("SOFTCOVER"); break;
-        case HARDCOVER_IMAGEWRAP: printf("HARDCOVER \\w IMAGEWRAP"); break;
-        case HARDCOVER_DUSTJACKET: printf("HARDCOVER \\w DUSTJACKET"); break;
-        default: printf("UNKNOWN");
+        case SOFTCOVER:
+            printf("SOFTCOVER");
+            break;
+        case HARDCOVER_IMAGEWRAP:
+            printf("HARDCOVER \\w IMAGEWRAP");
+            break;
+        case HARDCOVER_DUSTJACKET:
+            printf("HARDCOVER \\w DUSTJACKET");
+            break;
+        default:
+            printf("UNKNOWN");
     }
 
     printf(": \n");
 
-    for(int i = 0; i < BOOK_COUNT; i++)
-        if(BOOKS[i].cover == cover)
+    for (int i = 0; i < BOOK_COUNT; i++)
+        if (BOOKS[i].cover == cover)
             printBook(&BOOKS[i]);
 }
-void sortBooksByPriceAscending(){
-   for(int i=0;i<BOOK_COUNT;i++){
-       for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
-           if(BOOKS[j].price > BOOKS[j+1].price){
-               Book tmp=BOOKS[j];
-               BOOKS[j]=BOOKS[j+1];
-               BOOKS[j+1]=tmp;
-           }
-       }
-   }
-}
-void sortBooksByPriceDescending(){
-    for(int i=0;i<BOOK_COUNT;i++){
-        for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
-            if(BOOKS[j].price < BOOKS[j+1].price){
-                Book tmp=BOOKS[j];
-                BOOKS[j]=BOOKS[j+1];
-                BOOKS[j+1]=tmp;
+
+/// This function sorts the BOOKS vector by price in ascending order
+void sortBooksByPriceAscending() {
+    for (int i = 0; i < BOOK_COUNT; i++) {
+        for (int j = 0; j < BOOK_COUNT - i - 1; j++) {
+            if (BOOKS[j].price > BOOKS[j + 1].price) {
+                Book tmp = BOOKS[j];
+                BOOKS[j] = BOOKS[j + 1];
+                BOOKS[j + 1] = tmp;
             }
         }
     }
 }
-void sortBooksByPageNumberAscending(){
-    for(int i=0;i<BOOK_COUNT;i++){
-        for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
-            if(BOOKS[j].numberOfPages > BOOKS[j+1].numberOfPages){
-                Book tmp=BOOKS[j];
-                BOOKS[j]=BOOKS[j+1];
-                BOOKS[j+1]=tmp;
+
+/// This function sorts the BOOKS vector by price in descending order
+void sortBooksByPriceDescending() {
+    for (int i = 0; i < BOOK_COUNT; i++) {
+        for (int j = 0; j < BOOK_COUNT - i - 1; j++) {
+            if (BOOKS[j].price < BOOKS[j + 1].price) {
+                Book tmp = BOOKS[j];
+                BOOKS[j] = BOOKS[j + 1];
+                BOOKS[j + 1] = tmp;
             }
         }
     }
 }
-void sortBooksByPageNumberDescending(){
-    for(int i=0;i<BOOK_COUNT;i++){
-        for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
-            if(BOOKS[j].numberOfPages < BOOKS[j+1].numberOfPages){
-                Book tmp=BOOKS[j];
-                BOOKS[j]=BOOKS[j+1];
-                BOOKS[j+1]=tmp;
+
+/// This function sorts the BOOKS vector by page numbers in ascending order
+void sortBooksByPageNumberAscending() {
+    for (int i = 0; i < BOOK_COUNT; i++) {
+        for (int j = 0; j < BOOK_COUNT - i - 1; j++) {
+            if (BOOKS[j].numberOfPages > BOOKS[j + 1].numberOfPages) {
+                Book tmp = BOOKS[j];
+                BOOKS[j] = BOOKS[j + 1];
+                BOOKS[j + 1] = tmp;
             }
         }
     }
 }
+
+/// This function sorts the BOOKS vector by page numbers in descending order
+void sortBooksByPageNumberDescending() {
+    for (int i = 0; i < BOOK_COUNT; i++) {
+        for (int j = 0; j < BOOK_COUNT - i - 1; j++) {
+            if (BOOKS[j].numberOfPages < BOOKS[j + 1].numberOfPages) {
+                Book tmp = BOOKS[j];
+                BOOKS[j] = BOOKS[j + 1];
+                BOOKS[j + 1] = tmp;
+            }
+        }
+    }
+}
+
+/// This function sorts the BOOKS vector by publish year in ascending order
+void sortBooksByPublishYearAscending() {
+    for(int i = 0; i < BOOK_COUNT; i++) {
+        for(int j = 0; j < BOOK_COUNT - i - 1; j++) {
+            if(BOOKS[j].publishDate.year > BOOKS[j + 1].publishDate.year) {
+                Book tmp = BOOKS[j];
+                BOOKS[j] = BOOKS[j + 1];
+                BOOKS[j + 1] = tmp;
+            }
+        }
+    }
+}
+
+/// This function sorts the BOOKS vector by publish year in descending order
+void sortBooksByPublishYearDescending() {
+    for(int i = 0; i < BOOK_COUNT; i++) {
+        for(int j = 0; j < BOOK_COUNT - i - 1; j++) {
+            if(BOOKS[j].publishDate.year < BOOKS[j + 1].publishDate.year) {
+                Book tmp = BOOKS[j];
+                BOOKS[j] = BOOKS[j + 1];
+                BOOKS[j + 1] = tmp;
+            }
+        }
+    }
+}
+
 /// This function destroys a given BOOK (frees it from the memory)
 void destroyBook(Book *book) {
     free(book);

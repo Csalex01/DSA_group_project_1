@@ -45,6 +45,9 @@ void sortBooksByPriceDescending();
 void sortBooksByPageNumberAscending();
 void sortBooksByPageNumberDescending();
 
+void sortBooksByPublishYearAscending();
+void sortBooksByPublishYearDescending();
+
 void destroyBook(Book* book);
 
 #endif //BOOKPOINT_BOOK_H

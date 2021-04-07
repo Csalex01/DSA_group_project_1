@@ -5,13 +5,13 @@
 #include "../Utility/utils.h"
 
 /// This function creates a DATE and return it using the given parameters
-Date* createDate(int year, int month, int day) {
+Date *createDate(int year, int month, int day) {
 
     /// Allocate the date in the memory
-    Date* date = (Date*)malloc(sizeof(Date));
+    Date *date = (Date *) malloc(sizeof(Date));
 
     ///  If the memory allocation has failed
-    if(!date) {
+    if (!date) {
         printf("Failed to allocate memory for Date");
         return NULL;
     }
@@ -25,13 +25,13 @@ Date* createDate(int year, int month, int day) {
 }
 
 /// This function reads multiple DATES from a given file
-Date* readDatesFromFile(char* fileName) {
+Date *readDatesFromFile(char *fileName) {
 
     /// Open the file with the given file name
-    FILE* fin = fopen(fileName, "rt");
+    FILE *fin = fopen(fileName, "rt");
 
     /// If the memory allocation has failed
-    if(!fin) {
+    if (!fin) {
         printf("Could not open file %s", fileName);
         return NULL;
     }
@@ -46,10 +46,10 @@ Date* readDatesFromFile(char* fileName) {
     DATE_COUNT = n;
 
     /// Allocate n DATES in memory
-    Date* dates = (Date*)calloc(n, sizeof(Date));
+    Date *dates = (Date *) calloc(n, sizeof(Date));
 
     /// If the memory allocation has failed
-    if(!dates) {
+    if (!dates) {
         printf("Failed to allocate temporary vector for dates");
 
         /// Close the file, because it was opened earlier
@@ -63,7 +63,7 @@ Date* readDatesFromFile(char* fileName) {
 
     /// The core of this loop will get the data from the given file
     /// and initialises the i-th DATE in the array.
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         fscanf(fin, "%i", &year);
         fscanf(fin, "%i", &month);
         fscanf(fin, "%i", &day);
@@ -79,39 +79,39 @@ Date* readDatesFromFile(char* fileName) {
 }
 
 /// This function returns whether two dates are equal or not
-bool equalDates(Date* date1, Date* date2) {
+bool equalDates(Date *date1, Date *date2) {
     return date1->year == date2->year &&
-            date1->month == date2->month &&
-            date1->day == date2->day;
+           date1->month == date2->month &&
+           date1->day == date2->day;
 }
 
 /// This function destroys a given DATE (frees it from memory)
-void destroyDate(Date* date) {
+void destroyDate(Date *date) {
     free(date);
     date = NULL;
 }
 
 /// This function sorts the BOOKS global array in ascending order
-void sortYearsByAscending(){
-    for(int i = 0; i < DATE_COUNT - 1; i++) {
-        for(int j = 0; j < DATE_COUNT - i - 1; j++) {
-            if(DATES[j].year > DATES[j + 1].year) {
+void sortYearsByAscending() {
+    for (int i = 0; i < DATE_COUNT - 1; i++) {
+        for (int j = 0; j < DATE_COUNT - i - 1; j++) {
+            if (DATES[j].year > DATES[j + 1].year) {
                 Date tmp = DATES[j];
                 DATES[j] = DATES[j + 1];
-                DATES[j + 1]= tmp;
+                DATES[j + 1] = tmp;
             }
         }
     }
 }
 
 /// This function sorts the BOOKS global array in descending order
-void sortYearsByDescending(){
-    for(int i = 0; i < DATE_COUNT - 1; i++) {
-        for(int j = 0; j < DATE_COUNT - i - 1; j++) {
-            if(DATES[j].year < DATES[j + 1].year) {
+void sortYearsByDescending() {
+    for (int i = 0; i < DATE_COUNT - 1; i++) {
+        for (int j = 0; j < DATE_COUNT - i - 1; j++) {
+            if (DATES[j].year < DATES[j + 1].year) {
                 Date tmp = DATES[j];
                 DATES[j] = DATES[j + 1];
-                DATES[j + 1]= tmp;
+                DATES[j + 1] = tmp;
             }
         }
     }
@@ -119,7 +119,7 @@ void sortYearsByDescending(){
 
 /// This function prints all DATES to the standard output
 void printDates() {
-    for(int i = 0; i < DATE_COUNT; i++)
+    for (int i = 0; i < DATE_COUNT; i++)
         printf("%i %i %i\n", DATES[i].year, DATES[i].month, DATES[i].day);
     printf("\n");
 }

@@ -8,7 +8,7 @@
 void activateMenu() {
     int choice;
 
-    while(true) {
+    while (true) {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
         printf("         -> MENU <-        \n\n");
@@ -22,11 +22,17 @@ void activateMenu() {
 
         scanf("%i", &choice);
 
-        switch(choice) {
-            case 1: dateOperations(); break;
-            case 2: break;
-            case 3: break;
-            case 4: bookOperations(); break;
+        switch (choice) {
+            case 1:
+                dateOperations();
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                bookOperations();
+                break;
             case 5:
                 printf("\n=========> Goodbye! <=========\n");
                 freeVariables();
@@ -45,7 +51,7 @@ void activateMenu() {
 void dateOperations() {
     int choice;
 
-    while(true) {
+    while (true) {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
         printf("    -> DATE OPERATIONS <-  \n\n");
@@ -57,9 +63,8 @@ void dateOperations() {
         printf("> Choice: ");
 
         scanf("%i", &choice);
-        printf("\n<--------------------------->");
 
-        switch(choice) {
+        switch (choice) {
             /// Print dates
             case 1:
                 printf("\n> Printing %i dates... \n", DATE_COUNT);
@@ -82,7 +87,8 @@ void dateOperations() {
 
             /// Back to main menu
             case 4:
-                return;
+                activateMenu();
+                break;
 
             /// DEFAULT case
             default:
@@ -97,7 +103,7 @@ void dateOperations() {
 void bookOperations() {
     int choice;
 
-    while(true) {
+    while (true) {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
         printf("         -> BOOKS <-        \n\n");
@@ -107,17 +113,23 @@ void bookOperations() {
         printf("> 4. Print books based on price range\n");
         printf("> 5. Print books based on publish date\n");
         printf("> 6. Print books based on cover type\n");
-        printf("> 10. Back to main menu\n");
+        printf("> 7. Sort books by price in ascending order\n");
+        printf("> 8. Sort books by price in descending order\n");
+        printf("> 9. Sort books by page numbers in ascending order\n");
+        printf("> 10. Sort books by page numbers in descending order\n");
+        printf("> 11. Sort books by publish year in descending order\n");
+        printf("> 12. Sort books by publish year in descending order\n");
+        printf("> 13. Back to main menu\n");
         printf("<--------------------------->\n");
         printf("> Choice: ");
 
         scanf("%i", &choice);
 
-        switch(choice) {
+        switch (choice) {
             ///  Print all books
             case 1:
                 printf("\nAll the available books: \n");
-                for(int i = 0; i < BOOK_COUNT; i++)
+                for (int i = 0; i < BOOK_COUNT; i++)
                     printBook(&BOOKS[i]);
                 break;
 
@@ -146,8 +158,52 @@ void bookOperations() {
                 bookOperations_cover();
                 break;
 
+            /// Sort books by price in ascending order
+            case 7:
+                printf("\nSorting books by price in ascending order...");
+                sortBooksByPriceAscending();
+                printf("\nDone!\n");
+                break;
+
+            /// Sort books by price in descending order
+            case 8:
+                printf("\nSorting books by price in descending order...");
+                sortBooksByPriceDescending();
+                printf("\nDone!\n");
+                break;
+
+            /// Sort books by page numbers in ascending order
+            case 9:
+                printf("\nSorting books by page numbers in ascending order...");
+                sortBooksByPageNumberAscending();
+                printf("\nDone!\n");
+                break;
+
+            /// Sort books by page numbers in descending order
+            case 10:
+                printf("\nSorting books by page numbers in descending order...");
+                sortBooksByPageNumberDescending();
+                printf("\nDone!\n");
+                break;
+
+            /// Sort books by publish year in ascending order
+            case 11:
+                printf("\nSorting books by publish year in ascending order...");
+                sortBooksByPublishYearAscending();
+                printf("\nDone!\n");
+                break;
+
+            /// Sort books by publish year in descending order
+            case 12:
+                printf("\nSorting books by publish year in ascending order...");
+                sortBooksByPublishYearDescending();
+                printf("\nDone!\n");
+                break;
+
             /// Back to main menu
-            case 10: return;
+            case 13:
+                activateMenu();
+                break;
 
             /// DEFAULT case
             default:
@@ -203,7 +259,7 @@ void bookOperations_publishDate() {
     printf("\nDay: ");
     scanf("%i", &day);
 
-    Date* date = createDate(year, month, day);
+    Date *date = createDate(year, month, day);
 
     printBooksBasedOnPublishDate(date);
 }
@@ -222,7 +278,7 @@ void bookOperations_cover() {
 
     scanf("%i", &choice);
 
-    switch(choice) {
+    switch (choice) {
         case 1:
             printBooksBasedOnCoverType(SOFTCOVER);
             break;
@@ -236,5 +292,5 @@ void bookOperations_cover() {
             printf("\nError: UNDEFINED USER INPUT\n");
             freeVariables();
             exit(-1);
-        }
+    }
 }
