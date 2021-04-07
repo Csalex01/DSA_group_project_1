@@ -12,14 +12,10 @@ CMakeFiles/Bookpoint.dir/Book/Book.c.obj: ../enums.h
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Book/Book.h
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Date/Date.c
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Date/Date.h
-<<<<<<< Updated upstream
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Person/Person.h
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Publisher/Publisher.h
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Utility/utils.h
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../enums.h
-=======
-CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Utility/utils.h
->>>>>>> Stashed changes
 
 CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Book/Book.h
 CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Date/Date.h
@@ -43,13 +39,8 @@ CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Date/Date.h
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Person/Person.h
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Publisher/Publisher.c
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Publisher/Publisher.h
-<<<<<<< Updated upstream
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Utility/utils.h
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../enums.h
-=======
-CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Utility/utils.c
-CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Utility/utils.h
->>>>>>> Stashed changes
 
 CMakeFiles/Bookpoint.dir/Utility/utils.c.obj: ../Book/Book.h
 CMakeFiles/Bookpoint.dir/Utility/utils.c.obj: ../Date/Date.h

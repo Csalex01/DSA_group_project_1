@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< Updated upstream
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
-=======
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Book/Book.h
->>>>>>> Stashed changes
 stdbool.h
 -
 ../Person/Person.h
@@ -22,7 +18,6 @@ E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
 stdbool.h
-<<<<<<< Updated upstream
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/stdbool.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Menu/menu.c
@@ -38,19 +33,6 @@ E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Menu/menu.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Person/Person.h
-=======
--
-Date.h
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Date/Date.h
-../Utility/utils.h
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Utility/utils.h
-
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Date/Date.h
-stdbool.h
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Date/stdbool.h
-
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Person/Person.h
->>>>>>> Stashed changes
 ../enums.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/enums.h
 ../Date/Date.h
@@ -65,7 +47,6 @@ string.h
 -
 stdbool.h
 -
-<<<<<<< Updated upstream
 ../Date/Date.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
 ../Person/Person.h
@@ -76,30 +57,6 @@ E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/enums.h
 ../Book/Book.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
-=======
-string.h
--
-Publisher.h
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Publisher/Publisher.h
-../Utility/utils.c
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Utility/utils.c
-
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Publisher/Publisher.h
-../Date/Date.h
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Date/Date.h
-
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Utility/utils.c
-stdio.h
--
-string.h
--
-utils.h
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Utility/utils.h
-
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/Utility/utils.h
-
-C:/Users/Legion/Desktop/Informatika/Masodik_felev/Adatszerkezetek/DSA_group_project_1/Bookpoint/enums.h
->>>>>>> Stashed changes
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/enums.h
 
