@@ -241,7 +241,50 @@ void printBooksBasedOnCoverType(enum Cover cover) {
         if(BOOKS[i].cover == cover)
             printBook(&BOOKS[i]);
 }
-
+void sortBooksByPriceAscending(){
+   for(int i=0;i<BOOK_COUNT;i++){
+       for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
+           if(BOOKS[j].price > BOOKS[j+1].price){
+               Book tmp=BOOKS[j];
+               BOOKS[j]=BOOKS[j+1];
+               BOOKS[j+1]=tmp;
+           }
+       }
+   }
+}
+void sortBooksByPriceDescending(){
+    for(int i=0;i<BOOK_COUNT;i++){
+        for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
+            if(BOOKS[j].price < BOOKS[j+1].price){
+                Book tmp=BOOKS[j];
+                BOOKS[j]=BOOKS[j+1];
+                BOOKS[j+1]=tmp;
+            }
+        }
+    }
+}
+void sortBooksByPageNumberAscending(){
+    for(int i=0;i<BOOK_COUNT;i++){
+        for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
+            if(BOOKS[j].numberOfPages > BOOKS[j+1].numberOfPages){
+                Book tmp=BOOKS[j];
+                BOOKS[j]=BOOKS[j+1];
+                BOOKS[j+1]=tmp;
+            }
+        }
+    }
+}
+void sortBooksByPageNumberDescending(){
+    for(int i=0;i<BOOK_COUNT;i++){
+        for (int j = 0; j < BOOK_COUNT-i-1; ++j) {
+            if(BOOKS[j].numberOfPages < BOOKS[j+1].numberOfPages){
+                Book tmp=BOOKS[j];
+                BOOKS[j]=BOOKS[j+1];
+                BOOKS[j+1]=tmp;
+            }
+        }
+    }
+}
 /// This function destroys a given BOOK (frees it from the memory)
 void destroyBook(Book *book) {
     free(book);

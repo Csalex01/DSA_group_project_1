@@ -39,7 +39,11 @@ void printBooksBasedOnPriceRange(float minPrice, float maxPrice);
 void printBooksBasedOnPublishDate(Date* date);
 void printBooksBasedOnCoverType(enum Cover cover);
 
+void sortBooksByPriceAscending();
+void sortBooksByPriceDescending();
 
+void sortBooksByPageNumberAscending();
+void sortBooksByPageNumberDescending();
 
 void destroyBook(Book* book);
 
