@@ -20,11 +20,11 @@ typedef struct {
 Person* createPerson(char* ID, char* firstName, char* lastName, enum Nationality nationality, Date birthDate);
 Person* readPeopleFromFile(char* fileName);
 
-Person* getPersonByNationality(enum Nationality nationality);
+void getPersonByNationality(enum Nationality nationality);
 Person* getPersonByID(char* ID);
-Person* getPersonByBirthDate(Date* date);
-Person* getPersonBetweenTwoBirthDates(Date* date1, Date* date2);
-Person* getAdults();
+void getPersonByBirthDate(Date* date);
+void getPersonBetweenTwoBirthDates(Date* date1, Date* date2);
+void getAdults();
 
 void printPerson(Person* person);
 void destroyPerson(Person* person);
