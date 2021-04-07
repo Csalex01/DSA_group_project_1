@@ -83,7 +83,6 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - Get person by ID (DONE)
 - Sort by ID 
 - Get people by birth date
-- Get people by birth date between two dates
 - Get adults (age >= 18)
 - ...
 
@@ -96,12 +95,12 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 
 ### Book
 - Is coeval? (>= 2000.01.01) (DONE)
-- Get books based on page numbers
-- Get books based on price range
+- Print books based on page numbers
+- Print books based on price range
 - Get book based on ISBN
 - Get book based on title
-- Get book based on author
-- Get book based on publish date
+- Print book based on author
+- Print books based on publish date
 - Print books between two publish dates
 - Print books based on publisher
 - Print books based on cover type

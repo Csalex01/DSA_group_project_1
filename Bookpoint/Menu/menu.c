@@ -12,15 +12,12 @@ void activateMenu() {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
         printf("         -> MENU <-        \n\n");
-
         printf("> 1. Date operations\n");
         printf("> 2. Person operations\n");
         printf("> 3. Publisher operations\n");
         printf("> 4. Book operations\n");
         printf("> 5. Exit\n");
-
         printf("<--------------------------->\n");
-
         printf("> Choice: ");
 
         scanf("%i", &choice);
@@ -52,14 +49,11 @@ void dateOperations() {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
         printf("    -> DATE OPERATIONS <-  \n\n");
-
         printf("> 1. Print dates\n");
         printf("> 2. Sort dates in ascending order based on year\n");
         printf("> 3. Sort dates in descending order based on year\n");
         printf("> 4. Back to main menu\n");
-
         printf("<--------------------------->\n");
-
         printf("> Choice: ");
 
         scanf("%i", &choice);
@@ -107,7 +101,6 @@ void bookOperations() {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
         printf("         -> BOOKS <-        \n\n");
-
         printf("> 1. Print all books\n");
         printf("> 2. Print books based on author ID\n");
         printf("> 3. Print books based on page numbers\n");
@@ -115,9 +108,7 @@ void bookOperations() {
         printf("> 5. Print books based on publish date\n");
         printf("> 6. Print books based on cover type\n");
         printf("> 10. Back to main menu\n");
-
         printf("<--------------------------->\n");
-
         printf("> Choice: ");
 
         scanf("%i", &choice);
@@ -223,13 +214,10 @@ void bookOperations_cover() {
     printf("\n");
     printf("========> BOOKPOINT <========\n");
     printf("         -> COVER <-        \n\n");
-
     printf("> 1. Softcover\n");
     printf("> 2. Hardcover with Imagewrap\n");
     printf("> 3. Hardcover with Dustjacket\n");
-
     printf("<--------------------------->\n");
-
     printf("> Choice: ");
 
     scanf("%i", &choice);
