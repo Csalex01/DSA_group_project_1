@@ -13,9 +13,15 @@ typedef struct {
 
 /// Functions associated with this data structure
 Publisher* createPublisher(Date foundationDate, char* name, char* address);
+<<<<<<< Updated upstream
 Publisher* readPublishersFromFile(char* fileName);
 Publisher* getPublisherByName(char* name);
 Publisher* getPublisherByAddress(char* address);
+=======
+Publisher* readPublisherFromFile(Publisher* publisher);
+Publisher* getPublisherByName(Publisher* publishers, int n, char* name);
+Publisher* getPublisherByAddress(Publisher* publishers, int n, char* address);
+>>>>>>> Stashed changes
 
 bool checkExistenceByAddress(char* address);
 
