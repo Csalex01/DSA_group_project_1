@@ -1,4 +1,4 @@
-Bookpoint
+# Bookpoint
 ## Description
 
 Bookpoint is a free and open source CLI solution for libraries to manage their books. 
