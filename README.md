@@ -71,14 +71,14 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 	- Person functions (WORK IN PROGRESS)
 
 ## Operations by struct
-### Date (4 functions + 2)
+### Date
 
 - Sort by year (ascending) (DONE)
 - Sort by year (descending) (DONE)
 - Matching date count (Will be done later)
 - ...
 
-### Person (6 functions + 2)
+### Person
 - Get people by nationality
 - Get person by ID (DONE)
 - Sort by ID 
@@ -87,14 +87,14 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - Get adults (age >= 18)
 - ...
 
-### Publisher (5 functions + 2)
+### Publisher
 - Sort by foundation year 
 - Get publisher by name (DONE)
 - Get publisher by address (DONE)
 - Does a publisher exist based on a given address (DONE)
 - Get publisher count by foundation date between two dates (DONE)
 
-### Book (18 functions + 2)
+### Book
 - Is coeval? (>= 2000.01.01) (DONE)
 - Get books based on page numbers
 - Get books based on price
@@ -112,5 +112,3 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - Sort books by publish date (ascending)
 - Sort books by publish date (descending)
 - E-Book?
-- Add book from user input
-- Delete book
