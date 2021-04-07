@@ -86,6 +86,12 @@
 		<Unit filename="E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h">
 			<Option target="Bookpoint"/>
 		</Unit>
+		<Unit filename="E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Menu/menu.c">
+			<Option target="Bookpoint"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Menu/menu.h">
+			<Option target="Bookpoint"/>
+		</Unit>
 		<Unit filename="E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Person/Person.c">
 			<Option target="Bookpoint"/>
 		</Unit>

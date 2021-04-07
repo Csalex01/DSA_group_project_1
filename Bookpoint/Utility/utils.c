@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include "utils.h"
@@ -39,4 +40,29 @@ void fixDate(char *fileName) {
     /// Close files
     fclose(fin);
     fclose(fout);
+}
+
+void freeVariables() {
+    /// TODO: Fix memory issue
+//    for(int i = 0; i < DATE_COUNT; i++)
+//        destroyDate(&DATES[i]);
+
+//    for(int i = 0; i < PUBLISHER_COUNT; i++)
+//        destroyPublisher(&PUBLISHERS[i]);
+//
+//    for (int i = 0; i < AUTHOR_COUNT; i++)
+//        destroyPerson(&AUTHORS[i]);
+//
+//    for(int i = 0; i < BOOK_COUNT; i++)
+//        destroyBook(&BOOKS[i]);
+
+//    free(DATES);
+//    free(PUBLISHERS);
+//    free(AUTHORS);
+//    free(BOOKS);
+
+//    DATES = NULL;
+//    PUBLISHERS = NULL;
+//    AUTHORS = NULL;
+//    BOOKS = NULL;
 }

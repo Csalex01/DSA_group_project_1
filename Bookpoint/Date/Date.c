@@ -21,9 +21,6 @@ Date* createDate(int year, int month, int day) {
     date->month = month;
     date->day = day;
 
-    /// Increase the date counter
-    DATE_COUNT++;
-
     return date;
 }
 
@@ -41,9 +38,12 @@ Date* readDatesFromFile(char* fileName) {
 
     /// If the memory allocation succeeded
 
-    /// Get how many BOOKS are there
+    /// Get how many DATES are there
     int n;
     fscanf(fin, "%i", &n);
+
+    /// Assign n to DATE_COUNT (it won't change!)
+    DATE_COUNT = n;
 
     /// Allocate n DATES in memory
     Date* dates = (Date*)calloc(n, sizeof(Date));
@@ -110,7 +110,7 @@ void sortYearsByDescending(){
     }
 }
 
-/// This function prints a given DATE to the standard output
+/// This function prints all DATES to the standard output
 void printDates() {
     for(int i = 0; i < DATE_COUNT; i++)
         printf("%i %i %i\n", DATES[i].year, DATES[i].month, DATES[i].day);

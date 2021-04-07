@@ -196,6 +196,33 @@ Date/Date.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Date/Date.c.s
 .PHONY : Date/Date.c.s
 
+Menu/menu.obj: Menu/menu.c.obj
+
+.PHONY : Menu/menu.obj
+
+# target to build an object file
+Menu/menu.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Menu/menu.c.obj
+.PHONY : Menu/menu.c.obj
+
+Menu/menu.i: Menu/menu.c.i
+
+.PHONY : Menu/menu.i
+
+# target to preprocess a source file
+Menu/menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Menu/menu.c.i
+.PHONY : Menu/menu.c.i
+
+Menu/menu.s: Menu/menu.c.s
+
+.PHONY : Menu/menu.s
+
+# target to generate assembly for a file
+Menu/menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Bookpoint.dir\build.make CMakeFiles/Bookpoint.dir/Menu/menu.c.s
+.PHONY : Menu/menu.c.s
+
 Person/Person.obj: Person/Person.c.obj
 
 .PHONY : Person/Person.obj
@@ -319,6 +346,9 @@ help:
 	@echo ... Date/Date.obj
 	@echo ... Date/Date.i
 	@echo ... Date/Date.s
+	@echo ... Menu/menu.obj
+	@echo ... Menu/menu.i
+	@echo ... Menu/menu.s
 	@echo ... Person/Person.obj
 	@echo ... Person/Person.i
 	@echo ... Person/Person.s

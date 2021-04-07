@@ -21,7 +21,7 @@ bool checkExistenceByAddress(char* address);
 
 int publisherCountBetweenDates(Date date1, Date date2);
 
-void sortByYear();
-void destroyPublisher();
+void sortPublishersByYear();
+void destroyPublisher(Publisher* publisher);
 
 #endif //BOOKPOINT_PUBLISHER_H

@@ -17,6 +17,15 @@ CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Publisher/Publisher.h
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Utility/utils.h
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../enums.h
 
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Book/Book.h
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Date/Date.h
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Menu/menu.c
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Menu/menu.h
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Person/Person.h
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Publisher/Publisher.h
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Utility/utils.h
+CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../enums.h
+
 CMakeFiles/Bookpoint.dir/Person/Person.c.obj: ../Book/Book.h
 CMakeFiles/Bookpoint.dir/Person/Person.c.obj: ../Date/Date.h
 CMakeFiles/Bookpoint.dir/Person/Person.c.obj: ../Person/Person.c
@@ -43,6 +52,7 @@ CMakeFiles/Bookpoint.dir/Utility/utils.c.obj: ../enums.h
 
 CMakeFiles/Bookpoint.dir/main.c.obj: ../Book/Book.h
 CMakeFiles/Bookpoint.dir/main.c.obj: ../Date/Date.h
+CMakeFiles/Bookpoint.dir/main.c.obj: ../Menu/menu.h
 CMakeFiles/Bookpoint.dir/main.c.obj: ../Person/Person.h
 CMakeFiles/Bookpoint.dir/main.c.obj: ../Publisher/Publisher.h
 CMakeFiles/Bookpoint.dir/main.c.obj: ../Utility/utils.h

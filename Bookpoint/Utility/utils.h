@@ -29,5 +29,6 @@ Book* BOOKS;
 /// ----------
 
 void fixDate(char* fileName);
+void freeVariables();
 
 #endif //BOOKPOINT_UTILS_H
