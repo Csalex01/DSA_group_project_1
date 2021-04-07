@@ -11,7 +11,7 @@ EMPTY
 - Generate 100 random dates [(link)](https://www.random.org/calendar-dates/?mode=advanced) (DONE)
 	- YEAR(int) MONTH(int) DAY(int)
 
-- Generate 30 random people [(link)](https://www.fakenamegenerator.com/advanced.php)
+- Generate 30 random people [(link)](https://www.fakenamegenerator.com/advanced.php) (DONE)
 	- ID (random number between 0 and 10000, could be randomly generated)
 	- First Name
 	- Last Name
@@ -26,7 +26,7 @@ EMPTY
 	- Date (from generated dates)
 	- NAME(string) ZIP_CODE(int) CITY_NAME(string) STREET_NAME(string) HOUSE_NUMBER(int)
 	
-- Generate 30 books
+- Generate 30 books (DONE)
 	- 1 person could have multiple books
 	- Author (from generated people)
 	- ISBN code (13 digits, string)
@@ -55,27 +55,27 @@ EMPTY
 
 ## Operations by struct
 ### Date (4 functions + 2)
-- Sort by year (ascending)
-- Sort by year (descending)
+- Sort by year (ascending) (DONE)
+- Sort by year (descending) (DONE)
 - Matching date count (Will be done later)
-- Is coeval? (>= 200.01.01)
+- Is coeval? (>= 200.01.01) (DONE)
 - ...
 
 ### Person (6 functions + 2)
 - Get people by nationality
-- Get person by ID
-- Sort by ID
+- Get person by ID (DONE)
+- Sort by ID 
 - Get people by birth date
 - Get people by birth date between two dates
 - Get adults (age >= 18)
 - ...
 
 ### Publisher (5 functions + 2)
-- Sort by foundation year
-- Get publisher by name
-- Get publisher by address
-- Does a publisher exist based on a given address
-- Get publisher count by foundation date between two dates
+- Sort by foundation year 
+- Get publisher by name (DONE)
+- Get publisher by address (DONE)
+- Does a publisher exist based on a given address (DONE)
+- Get publisher count by foundation date between two dates (DONE)
 
 ### Book (18 functions + 2)
 - Get books based on page numbers

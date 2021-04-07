@@ -1,6 +1,7 @@
 #ifndef BOOKPOINT_ENUMS_H
 #define BOOKPOINT_ENUMS_H
 
+/// This enum lists the cover types
 enum Cover {
     // Source: https://www.blurb.com/blog/3-types-of-book-covers/
     SOFTCOVER = 0,
@@ -8,6 +9,7 @@ enum Cover {
     HARDCOVER_DUSTJACKET = 2
 };
 
+/// This enum lists the nationalities (not all of them)
 enum Nationality {
     HUNGARIAN = 0,
     ROMANIAN = 1,

@@ -1,0 +1,31 @@
+30
+HUN001 Gitta Racz 1946 7 3 0
+HUN002 Tarcal Vadasz 1959 7 15 0
+HUN003 Szabina Bako 1969 5 29 0
+HUN004 Keleman Bakos 1966 1 22 0
+GER001 Claudia Scroder 1958 9 14 2
+GER002 Paul Eichelberger 1977 7 7 2
+GER003 Bernd Eichel 1996 7 13 2
+FRE001 Theodore Fremont 1975 10 23 3
+FRE002 Sargent Chalifour 1982 2 4 3
+FRE003 Emilie Bourgouin 1969 3 7 3
+USA001 James Phipps 1987 1 18 4
+USA002 WandaBieber 1935 8 17 4
+USA003 Brad Nelson 1969 3 16 4
+USA004 Hubert Rodgers 1971 11 5 4
+UKI001 Sean Sheppard 1979 8 22 5
+UKI002 Eve Khan 1968 7 27 5
+UKI003 Alfie Bolton 1961 10 9 5
+UKI004 Dominic Young 1938 8 17 5
+UKI005 Cerys Bishop 1950 8 17 5
+DAN001 Peter Jensen 1938 8 25 6
+DAN002 Jacob Overgaard 1962 7 10 6
+DAN003 Maja Jeppesen 1942 7 19 6
+DAN004 Sofie Lauritsen 1959 10 9 6
+ICE001 Hermann Asgeirsson 1939 7 23 7
+ICE002 Steinar Olason 1963 11 12 7
+ICE003 Hallbjorg Steindorsdottir 1999 10 15 7
+ICE004 Eyrun Grimsdottir 1974 2 21 7
+SWE001 Gry Mansson 1963 4 29 9
+SWE002 Marc Andersson 1958 8 16 9
+SWE003 Ottilia Lundgren 1980 8 31 9
