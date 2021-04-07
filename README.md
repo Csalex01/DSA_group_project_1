@@ -17,7 +17,7 @@ This project is under GPL-3.0 license. (You can read more about it by checking o
 
 TL;DR: Nonsense
 
-Sidenote: This is a group project for the Data Structures and Algorithms course (DSA)
+Sidenote: This is a group project for the Data Structures and Algorithms course (DSA).
 
 ## 👥 Team Members
 - Csata Levente
