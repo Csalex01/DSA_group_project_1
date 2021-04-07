@@ -1,7 +1,3 @@
-//
-// Created by csill on 4/7/2021.
-//
-
 #ifndef BOOKPOINT_MENU_H
 #define BOOKPOINT_MENU_H
 
