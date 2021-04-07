@@ -7,6 +7,7 @@
 #include "../Date/Date.h"
 #include "../Publisher/Publisher.h"
 
+/// Structure definition of Book
 typedef struct {
     int numberOfPages;
     float price;
@@ -21,8 +22,11 @@ typedef struct {
     Publisher publisher;
 } Book;
 
+/// Functions associated with this data structure
 Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook);
 Book* readBooksFromFile(char* fileName);
+
+bool isCoeval(Date* date);
 
 void printBook(Book* book);
 void destroyBook(Book* book);

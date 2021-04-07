@@ -4,6 +4,7 @@
 #include "../enums.h"
 #include "../Date/Date.h"
 
+/// Structure definition of Person
 typedef struct {
     char ID[7];
     char firstName[26];
@@ -15,6 +16,7 @@ typedef struct {
 
 } Person;
 
+/// Functions associated with this data structure
 Person* createPerson(char* ID, char* firstName, char* lastName, enum Nationality nationality, Date birthDate);
 Person* readPeopleFromFile(char* fileName);
 

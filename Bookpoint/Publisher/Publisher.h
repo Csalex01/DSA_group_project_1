@@ -3,6 +3,7 @@
 
 #include "../Date/Date.h"
 
+/// Structure definition of Publisher
 typedef struct {
     char name[25];
     char address[75];
@@ -10,6 +11,7 @@ typedef struct {
     Date foundationDate;
 } Publisher;
 
+/// Functions associated with this data structure
 Publisher* createPublisher(Date foundationDate, char* name, char* address);
 Publisher* readPublishersFromFile(char* fileName);
 Publisher* getPublisherByName(char* name);

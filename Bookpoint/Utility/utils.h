@@ -12,19 +12,21 @@
 #include "../Book/Book.h"
 
 
-// GLOBAL VARIABLES
+/// GLOBAL VARIABLES
 
+// Counters
 int DATE_COUNT;
 int PUBLISHER_COUNT;
 int AUTHOR_COUNT;
 int BOOK_COUNT;
 
+// Vectors
 Date* DATES;
 Publisher* PUBLISHERS;
 Person* AUTHORS;
 Book* BOOKS;
 
-// ----------
+/// ----------
 
 void fixDate(char* fileName);
 

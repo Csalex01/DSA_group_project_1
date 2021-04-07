@@ -3,26 +3,27 @@
 
 #include "utils.h"
 
+/// This function is redundant, but it was used to convert dates to the right format.
 void fixDate(char *fileName) {
-    // Open required files
+    /// Open required files
     FILE *fin = fopen(fileName, "rt");
     FILE *fout = fopen("dates.txt", "wt");
 
-    // If could not open file
+    /// If could not open file
     if (!fin && !fout) {
         printf("Failed to open file \"%s\"", fileName);
         return;
     }
 
-    // Temporary string
+    /// Temporary string
     char line[11];
 
-    // There are 100 dates, loop through all of them
+    /// There are 100 dates, loop through all of them
     for (int i = 0; i < 100; i++) {
         // Read the line
         fscanf(fin, "%s", line);
 
-        // Remove whitespaces and fix numbers beginning with 0
+        /// Remove whitespaces and fix numbers beginning with 0
         for (int j = 0; j < 10; j++) {
             if (line[j] == '-')
                 line[j] = ' ';
@@ -31,11 +32,11 @@ void fixDate(char *fileName) {
                 strcpy(line + j + 1, line + j + 2);
         }
 
-        // Write to output file
+        /// Write to output file
         fprintf(fout, "%s\n", line);
     }
 
-    // Close files
+    /// Close files
     fclose(fin);
     fclose(fout);
 }

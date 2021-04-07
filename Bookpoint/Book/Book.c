@@ -2,16 +2,28 @@
 #include <stdio.h>
 
 #include "../Utility/utils.h"
-#include "Book.h"
 
-Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook){
-    Book* book = (Book*)malloc(sizeof(Book));
+/// This function creates a BOOK and return it using the given parameters
+Book *createBook(char *ISBN,
+                 char *title,
+                 float price,
+                 int numberOfPages,
+                 Publisher publisher,
+                 Date publishDate,
+                 Person author,
+                 enum Cover cover,
+                 bool ebook) {
 
-    if(!book) {
+    /// Allocate a BOOK in the memory
+    Book *book = (Book *) malloc(sizeof(Book));
+
+    /// If the memory allocation has failed
+    if (!book) {
         printf("Failed to allocate memory for Book");
         return NULL;
     }
 
+    /// If the memory allocation succeeded
     strcpy(book->ISBN, ISBN);
     strcpy(book->title, title);
     book->price = price;
@@ -22,30 +34,44 @@ Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publis
     book->cover = cover;
     book->ebook = ebook;
 
+    /// Increase the BOOK counter
     BOOK_COUNT++;
 
     return book;
 }
 
-Book* readBooksFromFile(char* fileName) {
-    FILE* fin = fopen(fileName, "rt");
+/// This function reads multiple BOOKS from a given file
+Book *readBooksFromFile(char *fileName) {
 
-    if(!fin) {
+    /// Open the file with the given file name
+    FILE *fin = fopen(fileName, "rt");
+
+    /// If the memory allocation has failed
+    if (!fin) {
         printf("Could not open file %s", fileName);
         return NULL;
     }
 
+    /// If the memory allocation succeeded
+
+    /// Get how many BOOKS are there
     int n;
     fscanf(fin, "%i", &n);
 
-    Book* books = (Book*)calloc(n, sizeof(Book));
+    /// Allocate n BOOKS in memory
+    Book *books = (Book *) calloc(n, sizeof(Book));
 
-    if(!books) {
+    /// If the memory allocation has failed
+    if (!books) {
         printf("Failed to allocate temporary vector for books.");
+
+        /// Close the file, because it was opened earlier
         fclose(fin);
+
         return NULL;
     }
 
+    /// Temporary variables
     char title[31], ISBN[14];
 
     int numberOfPages;
@@ -65,7 +91,9 @@ Book* readBooksFromFile(char* fileName) {
     Publisher publisher;
     char publisherName[25];
 
-    for(int i = 0; i < n; i++) {
+    /// The core of this loop will get the data from the given file
+    /// and initialises the i-th BOOK in the array.
+    for (int i = 0; i < n; i++) {
         fscanf(fin, "%s", authorID);
         author = *getPersonByID(authorID);
 
@@ -86,14 +114,24 @@ Book* readBooksFromFile(char* fileName) {
 
         numberOfPages = rand() % 1001;
 
+        /// Create a new BOOK using the temporary variables
         books[i] = *createBook(ISBN, title, price, numberOfPages, publisher, publishDate, author, cover, ebook);
     }
+
+    /// Close the previously opened file
+    fclose(fin);
 
     return books;
 }
 
-void printBook(Book* book) {
-    printf("%s\n", book->ISBN);
+/// This function returns whether a BOOK is coeval or not
+bool isCoeval(Date* date){
+    return date->year >= 2000 && date->month >= 1 && date->day >= 1;
+}
+
+/// This function prints a given BOOK to the standard output
+void printBook(Book *book) {
+    printf("ISBN: %s\n", book->ISBN);
     printf("\tTitle: %s\n", book->title);
     printf("\tAuthor: %s %s\n", book->author.firstName, book->author.lastName);
     printf("\tNumber of pages: %i\n", book->numberOfPages);
@@ -106,8 +144,8 @@ void printBook(Book* book) {
     printf("\tCover: %i (", book->cover);
     switch (book->cover) {
         case 0: printf("SOFTCOVER"); break;
-        case 1: printf("HARDCOVER \\w IMAGEWRAP");
-        case 2: printf("HARDCOVER \\w DUSTJACKET");
+        case 1: printf("HARDCOVER \\w IMAGEWRAP"); break;
+        case 2: printf("HARDCOVER \\w DUSTJACKET"); break;
         default: printf("UNKNOWN");
     }
     printf(")\n");
@@ -115,7 +153,8 @@ void printBook(Book* book) {
     printf("\tPrice: %.2f\n\n", book->price);
 }
 
-void destroyBook(Book* book) {
+/// This function destroys a given BOOK (frees it from the memory)
+void destroyBook(Book *book) {
     free(book);
     book = NULL;
 }
