@@ -96,9 +96,6 @@ Person *readPeopleFromFile(char *fileName) {
 }
 
 void getPersonByNationality(enum Nationality nationality) {
-    //if(nationality==-1)
-    //  return NULL;
-    //printf("%i",AUTHOR_COUNT);
     for (int i = 0; i < AUTHOR_COUNT; i++)
         if (nationality == AUTHORS[i].nationality)
             printPerson(&AUTHORS[i]);
@@ -113,31 +110,12 @@ Person *getPersonByID(char *ID) {
 }
 
 void getPersonByBirthDate(Date *date) {
-
     for (int i = 0; i < AUTHOR_COUNT; i++) {
         if ((AUTHORS[i].birthDate.year == date->year) &&
             (AUTHORS[i].birthDate.month == date->month) &&
             (AUTHORS[i].birthDate.day == date->day))
 
             printPerson(&AUTHORS[i]);
-    }
-}
-
-void getPersonBetweenTwoBirthDates(Date *date1, Date *date2) {
-
-    for (int i = 0; i < AUTHOR_COUNT; i++) {
-
-        if ((
-                    (date1->year <= AUTHORS[i].birthDate.year) &&
-                    (date1->month <= AUTHORS[i].birthDate.month) &&
-                    (date1->day <= AUTHORS[i].birthDate.day)
-            ) && (
-                    (AUTHORS[i].birthDate.year <= date2->year) &&
-                    (AUTHORS[i].birthDate.month <= date2->month) &&
-                    (AUTHORS[i].birthDate.day <= date2->day)
-            ))
-            printPerson(&AUTHORS[i]);
-
     }
 }
 

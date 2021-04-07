@@ -19,11 +19,10 @@ typedef struct {
 /// Functions associated with this data structure
 Person* createPerson(char* ID, char* firstName, char* lastName, enum Nationality nationality, Date birthDate);
 Person* readPeopleFromFile(char* fileName);
+Person* getPersonByID(char* ID);
 
 void getPersonByNationality(enum Nationality nationality);
-Person* getPersonByID(char* ID);
 void getPersonByBirthDate(Date* date);
-void getPersonBetweenTwoBirthDates(Date* date1, Date* date2);
 void getAdults();
 
 void printPerson(Person* person);

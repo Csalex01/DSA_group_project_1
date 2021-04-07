@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint
+CMAKE_SOURCE_DIR = "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug
+CMAKE_BINARY_DIR = "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Bookpoint.dir/depend.make
@@ -78,94 +78,94 @@ include CMakeFiles/Bookpoint.dir/flags.make
 
 CMakeFiles/Bookpoint.dir/main.c.obj: CMakeFiles/Bookpoint.dir/flags.make
 CMakeFiles/Bookpoint.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Bookpoint.dir/main.c.obj"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\main.c.obj   -c C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Bookpoint.dir/main.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\main.c.obj   -c "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\main.c"
 
 CMakeFiles/Bookpoint.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bookpoint.dir/main.c.i"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\main.c > CMakeFiles\Bookpoint.dir\main.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\main.c" > CMakeFiles\Bookpoint.dir\main.c.i
 
 CMakeFiles/Bookpoint.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bookpoint.dir/main.c.s"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\main.c -o CMakeFiles\Bookpoint.dir\main.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\main.c" -o CMakeFiles\Bookpoint.dir\main.c.s
 
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: CMakeFiles/Bookpoint.dir/flags.make
 CMakeFiles/Bookpoint.dir/Date/Date.c.obj: ../Date/Date.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Bookpoint.dir/Date/Date.c.obj"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Date\Date.c.obj   -c C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Date\Date.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Bookpoint.dir/Date/Date.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Date\Date.c.obj   -c "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Date\Date.c"
 
 CMakeFiles/Bookpoint.dir/Date/Date.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bookpoint.dir/Date/Date.c.i"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Date\Date.c > CMakeFiles\Bookpoint.dir\Date\Date.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Date\Date.c" > CMakeFiles\Bookpoint.dir\Date\Date.c.i
 
 CMakeFiles/Bookpoint.dir/Date/Date.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bookpoint.dir/Date/Date.c.s"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Date\Date.c -o CMakeFiles\Bookpoint.dir\Date\Date.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Date\Date.c" -o CMakeFiles\Bookpoint.dir\Date\Date.c.s
 
 CMakeFiles/Bookpoint.dir/Person/Person.c.obj: CMakeFiles/Bookpoint.dir/flags.make
 CMakeFiles/Bookpoint.dir/Person/Person.c.obj: ../Person/Person.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Bookpoint.dir/Person/Person.c.obj"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Person\Person.c.obj   -c C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Person\Person.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Bookpoint.dir/Person/Person.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Person\Person.c.obj   -c "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Person\Person.c"
 
 CMakeFiles/Bookpoint.dir/Person/Person.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bookpoint.dir/Person/Person.c.i"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Person\Person.c > CMakeFiles\Bookpoint.dir\Person\Person.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Person\Person.c" > CMakeFiles\Bookpoint.dir\Person\Person.c.i
 
 CMakeFiles/Bookpoint.dir/Person/Person.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bookpoint.dir/Person/Person.c.s"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Person\Person.c -o CMakeFiles\Bookpoint.dir\Person\Person.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Person\Person.c" -o CMakeFiles\Bookpoint.dir\Person\Person.c.s
 
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: CMakeFiles/Bookpoint.dir/flags.make
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj: ../Publisher/Publisher.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Publisher\Publisher.c.obj   -c C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Publisher\Publisher.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Publisher\Publisher.c.obj   -c "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Publisher\Publisher.c"
 
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.i"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Publisher\Publisher.c > CMakeFiles\Bookpoint.dir\Publisher\Publisher.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Publisher\Publisher.c" > CMakeFiles\Bookpoint.dir\Publisher\Publisher.c.i
 
 CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bookpoint.dir/Publisher/Publisher.c.s"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Publisher\Publisher.c -o CMakeFiles\Bookpoint.dir\Publisher\Publisher.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Publisher\Publisher.c" -o CMakeFiles\Bookpoint.dir\Publisher\Publisher.c.s
 
 CMakeFiles/Bookpoint.dir/Book/Book.c.obj: CMakeFiles/Bookpoint.dir/flags.make
 CMakeFiles/Bookpoint.dir/Book/Book.c.obj: ../Book/Book.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Bookpoint.dir/Book/Book.c.obj"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Book\Book.c.obj   -c C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Book\Book.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Bookpoint.dir/Book/Book.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Book\Book.c.obj   -c "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Book\Book.c"
 
 CMakeFiles/Bookpoint.dir/Book/Book.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bookpoint.dir/Book/Book.c.i"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Book\Book.c > CMakeFiles\Bookpoint.dir\Book\Book.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Book\Book.c" > CMakeFiles\Bookpoint.dir\Book\Book.c.i
 
 CMakeFiles/Bookpoint.dir/Book/Book.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bookpoint.dir/Book/Book.c.s"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Book\Book.c -o CMakeFiles\Bookpoint.dir\Book\Book.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Book\Book.c" -o CMakeFiles\Bookpoint.dir\Book\Book.c.s
 
 CMakeFiles/Bookpoint.dir/Utility/utils.c.obj: CMakeFiles/Bookpoint.dir/flags.make
 CMakeFiles/Bookpoint.dir/Utility/utils.c.obj: ../Utility/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Bookpoint.dir/Utility/utils.c.obj"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Utility\utils.c.obj   -c C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Utility\utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Bookpoint.dir/Utility/utils.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Utility\utils.c.obj   -c "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Utility\utils.c"
 
 CMakeFiles/Bookpoint.dir/Utility/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bookpoint.dir/Utility/utils.c.i"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Utility\utils.c > CMakeFiles\Bookpoint.dir\Utility\utils.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Utility\utils.c" > CMakeFiles\Bookpoint.dir\Utility\utils.c.i
 
 CMakeFiles/Bookpoint.dir/Utility/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bookpoint.dir/Utility/utils.c.s"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Utility\utils.c -o CMakeFiles\Bookpoint.dir\Utility\utils.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Utility\utils.c" -o CMakeFiles\Bookpoint.dir\Utility\utils.c.s
 
 CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: CMakeFiles/Bookpoint.dir/flags.make
 CMakeFiles/Bookpoint.dir/Menu/menu.c.obj: ../Menu/menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Bookpoint.dir/Menu/menu.c.obj"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Menu\menu.c.obj   -c C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Menu\menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Bookpoint.dir/Menu/menu.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bookpoint.dir\Menu\menu.c.obj   -c "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Menu\menu.c"
 
 CMakeFiles/Bookpoint.dir/Menu/menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bookpoint.dir/Menu/menu.c.i"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Menu\menu.c > CMakeFiles\Bookpoint.dir\Menu\menu.c.i
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Menu\menu.c" > CMakeFiles\Bookpoint.dir\Menu\menu.c.i
 
 CMakeFiles/Bookpoint.dir/Menu/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bookpoint.dir/Menu/menu.c.s"
-	C:\OJI\Codeblocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\Menu\menu.c -o CMakeFiles\Bookpoint.dir\Menu\menu.c.s
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\Menu\menu.c" -o CMakeFiles\Bookpoint.dir\Menu\menu.c.s
 
 # Object files for target Bookpoint
 Bookpoint_OBJECTS = \
@@ -191,7 +191,7 @@ Bookpoint.exe: CMakeFiles/Bookpoint.dir/build.make
 Bookpoint.exe: CMakeFiles/Bookpoint.dir/linklibs.rsp
 Bookpoint.exe: CMakeFiles/Bookpoint.dir/objects1.rsp
 Bookpoint.exe: CMakeFiles/Bookpoint.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable Bookpoint.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable Bookpoint.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Bookpoint.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -204,6 +204,6 @@ CMakeFiles/Bookpoint.dir/clean:
 .PHONY : CMakeFiles/Bookpoint.dir/clean
 
 CMakeFiles/Bookpoint.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug C:\Users\Legion\Desktop\Informatika\Masodik_felev\Adatszerkezetek\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles\Bookpoint.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint" "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint" "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug" "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug" "E:\Egyetem\I ev\II felev\Adatszerkezetek_es_Algoritmusok\Csoportmunka\DSA_group_project_1\Bookpoint\cmake-build-debug\CMakeFiles\Bookpoint.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Bookpoint.dir/depend
 
