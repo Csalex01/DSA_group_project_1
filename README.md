@@ -12,7 +12,7 @@ All of this could not have been possible without a whole team of psychiatrists..
 
 Credits: Csata Levente, Csillag Alex, Miklós Nándor
 
-This project is under GPL-3.0 license. (You can read more about it by checking out the provided LICENSE file, they don't pay me enough for explaining it.)
+This project is under GPL-3.0 license. (You can read more about it by checking out the provided LICENSE file, they don't pay me enough to explain it.)
 
 ## Team Members
 - Csata Levente
