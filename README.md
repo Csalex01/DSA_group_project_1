@@ -43,15 +43,15 @@ EMPTY
 - Csata Levente
 	- Publisher generation (DONE)
 	- Publisher functions (DONE)
-	- Date functions
+	- Date functions (WORK IN PROGRESS)
 - Csillag Alex
 	- Date generation (DONE)
 	- Book generation (DONE)
-	- Menu functions
-	- Book functions
+	- Menu functionality (WORK IN PROGRESS)
+	- Book functions (WORK IN PROGRESS)
 - Miklós Nándor
-	- People generation
-	- Person functions
+	- People generation (WORK IN PROGRESS)
+	- Person functions (WORK IN PROGRESS)
 
 ## Operations by struct
 ### Date (4 functions + 2)
