@@ -15,7 +15,7 @@ Credits: Csata Levente, Csillag Alex, Miklós Nándor
 
 This project is under GPL-3.0 license. (You can read more about it by checking out the provided LICENSE file, they don't pay me enough to explain it.)
 
-## Team Members
+## 👥 Team Members
 - Csata Levente
 - Csillag Alex
 - Miklós Nándor
