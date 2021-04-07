@@ -16,9 +16,13 @@
 
 int DATE_COUNT;
 int PUBLISHER_COUNT;
+int AUTHOR_COUNT;
+int BOOK_COUNT;
 
 Date* DATES;
 Publisher* PUBLISHERS;
+Person* AUTHORS;
+Book* BOOKS;
 
 // ----------
 

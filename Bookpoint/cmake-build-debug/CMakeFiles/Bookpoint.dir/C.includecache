@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
-E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
-stdbool.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.c
+stdlib.h
+-
+stdio.h
 -
 ../Utility/utils.h
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
+Book.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
+
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
+stdbool.h
+-
+../Person/Person.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Person/Person.h
+../Date/Date.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
+../Publisher/Publisher.h
+E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Publisher/Publisher.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Date/Date.h
 stdbool.h
@@ -43,10 +57,4 @@ E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Book/Book.h
 
 E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/enums.h
-
-E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/main.c
-stdio.h
--
-Utility/utils.h
-E:/Egyetem/I ev/II felev/Adatszerkezetek_es_Algoritmusok/Csoportmunka/DSA_group_project_1/Bookpoint/Utility/utils.h
 

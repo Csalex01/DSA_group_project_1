@@ -60,33 +60,33 @@ void destroyDate(Date* date) {
     date = NULL;
 }
 
-void sortYearsByAscending(Date* date, int n){
+void sortYearsByAscending(int n){
     for(int i = 0; i < n - 1; i++) {
         for(int j = 0; j < n - i - 1; j++) {
-            if(date[j].year > date[j + 1].year) {
-                Date tmp = date[j];
-                date[j] = date[j + 1];
-                date[j + 1]= tmp;
+            if(DATES[j].year > DATES[j + 1].year) {
+                Date tmp = DATES[j];
+                DATES[j] = DATES[j + 1];
+                DATES[j + 1]= tmp;
             }
         }
     }
 }
 
-void sortYearsByDescending(Date* date, int n){
+void sortYearsByDescending(int n){
     for(int i = 0; i < n - 1; i++) {
         for(int j = 0; j < n - i - 1; j++) {
-            if(date[j].year < date[j + 1].year) {
-                Date tmp = date[j];
-                date[j] = date[j + 1];
-                date[j + 1]= tmp;
+            if(DATES[j].year < DATES[j + 1].year) {
+                Date tmp = DATES[j];
+                DATES[j] = DATES[j + 1];
+                DATES[j + 1]= tmp;
             }
         }
     }
 }
 
-void printDates(Date* dates, int n) {
+void printDates(int n) {
     for(int i = 0; i < n; i++)
-        printf("%i %i %i\n", dates[i].year, dates[i].month, dates[i].day);
+        printf("%i %i %i\n", DATES[i].year, DATES[i].month, DATES[i].day);
     printf("\n");
 }
 

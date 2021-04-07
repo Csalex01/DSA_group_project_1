@@ -3,13 +3,15 @@
 
 #include <stdbool.h>
 
-#include "../Utility/utils.h"
+#include "../Person/Person.h"
+#include "../Date/Date.h"
+#include "../Publisher/Publisher.h"
 
 typedef struct {
     int numberOfPages;
     float price;
-    char* title;
-    char* ISBN;
+    char title[31];
+    char ISBN[14];
 
     bool ebook;
 
@@ -20,7 +22,9 @@ typedef struct {
 } Book;
 
 Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook);
+Book* readBooksFromFile(char* fileName);
 
+void printBook(Book* book);
 void destroyBook(Book* book);
 
 #endif //BOOKPOINT_BOOK_H
