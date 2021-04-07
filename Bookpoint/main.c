@@ -16,7 +16,7 @@ int main() {
     BOOKS = readBooksFromFile("books.txt");
     /// ----------
 
-    /// TODO: Interactive menu
+    /// TODO: Interactive menu (WORK IN PROGRESS)
 
     activateMenu();
 

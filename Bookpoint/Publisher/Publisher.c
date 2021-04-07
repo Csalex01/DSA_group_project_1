@@ -134,6 +134,19 @@ int publisherCountBetweenDates(Date date1, Date date2) {
     return count;
 }
 
+/// This function sorts the PUBLISHERS vector by the year in ascending order
+void sortPublishersByYear() {
+    for(int i = 0; i < PUBLISHER_COUNT - 1; i++) {
+        for(int j = 0; j < PUBLISHER_COUNT - i - 1; j++) {
+            if(PUBLISHERS[j].foundationDate.year > PUBLISHERS[j + 1].foundationDate.year) {
+                Publisher tmp = PUBLISHERS[j];
+                PUBLISHERS[j] = PUBLISHERS[j+1];
+                PUBLISHERS[j + 1] = tmp;
+            }
+        }
+    }
+}
+
 /// This function destroys a given PUBLISHER (frees it from the memory)
 void destroyPublisher(Publisher *publisher) {
     free(publisher);

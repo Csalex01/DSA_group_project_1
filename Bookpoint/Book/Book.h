@@ -26,7 +26,7 @@ typedef struct {
 Book* createBook(char* ISBN, char* title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook);
 Book* readBooksFromFile(char* fileName);
 
-bool isCoeval(Date* date);
+bool isCoeval(Book* book);
 
 void printBook(Book* book);
 void destroyBook(Book* book);

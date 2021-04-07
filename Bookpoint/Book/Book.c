@@ -125,8 +125,10 @@ Book *readBooksFromFile(char *fileName) {
 }
 
 /// This function returns whether a BOOK is coeval or not
-bool isCoeval(Date* date){
-    return date->year >= 2000 && date->month >= 1 && date->day >= 1;
+bool isCoeval(Book* book){
+    return book->author.birthDate.year >= 2000 &&
+           book->author.birthDate.month >= 1 &&
+           book->author.birthDate.day >= 1;
 }
 
 /// This function prints a given BOOK to the standard output
