@@ -76,7 +76,6 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - Sort by year (ascending) (DONE)
 - Sort by year (descending) (DONE)
 - Matching date count (Will be done later)
-- Is coeval? (>= 200.01.01) (DONE)
 - ...
 
 ### Person (6 functions + 2)
@@ -96,6 +95,7 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - Get publisher count by foundation date between two dates (DONE)
 
 ### Book (18 functions + 2)
+- Is coeval? (>= 2000.01.01) (DONE)
 - Get books based on page numbers
 - Get books based on price
 - Get books between two price values
