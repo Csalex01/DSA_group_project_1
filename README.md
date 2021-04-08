@@ -2,7 +2,7 @@
 
 ## 📋 Description
 
-Bookpoint is a free and open source CLI solution for libraries to manage their books. 
+Bookpoint is a free and open source CLI solution for libraries.
 
 With this tool, you can list all the available books, apply a filter on them, check for existence based on attributes, and many more!
 If you are interested in a book and want to dig deeper about a publisher, writer, etc..., you can do that!
