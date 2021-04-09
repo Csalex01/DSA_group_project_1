@@ -60,12 +60,12 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - Csata Levente
 	- Publisher generation (DONE)
 	- Publisher functions (DONE)
-	- Date functions (WORK IN PROGRESS)
+	- Date functions (WORK IN PROGRESS)(Szerintem kesz van 90%-ba)
 - Csillag Alex
 	- Date generation (DONE)
 	- Book generation (DONE)
 	- Menu functionality (WORK IN PROGRESS)
-	- Book functions (WORK IN PROGRESS)
+	- Book functions (WORK IN PROGRESS) (Szerintem kesz van 90%-ba)
 - Miklós Nándor
 	- People generation (WORK IN PROGRESS)
 	- Person functions (WORK IN PROGRESS)
@@ -79,15 +79,15 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - ...
 
 ### Person
-- Get people by nationality
-- Get person by ID (DONE)
+- Get people by nationality(DONE)Leevi --Par helyre irtam azokat megjeloltem, de meg lekell ellenorizzuk--
+- Get person by ID (DONE)Levi
 - Sort by ID 
-- Get people by birth date
-- Get adults (age >= 18)
+- Get people by birth date(DONE)Levi
+- Get adults (age >= 18)(DONE)Levi
 - ...
 
 ### Publisher
-- Sort by foundation year 
+- Sort by foundation year(DONE)Levi
 - Get publisher by name (DONE)
 - Get publisher by address (DONE)
 - Does a publisher exist based on a given address (DONE)
