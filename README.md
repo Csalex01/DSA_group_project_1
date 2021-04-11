@@ -1,6 +1,6 @@
 # 📚 Bookpoint 📚
 
-## 📋 Description 📋
+## 📖 Description 📖
 
 Bookpoint is a free and open source CLI solution for libraries.
 
@@ -23,3 +23,32 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 - Csata Levente
 - Csillag Alex
 - Miklós Nándor
+
+## 📋 Statistics 📋
+- ~1750 lines of code
+
+- 61 functions
+
+- 7 .c source files
+    - Book.c
+    - Date.c
+    - menu.c
+    - Person.c
+    - Publisher.c
+    - utils.c
+    - main.c
+  
+- 7 .h header files
+    - Book.h
+    - Date.h
+    - menu.h
+    - Person.h
+    - Publisher.h
+    - utils.h
+    - enums.h
+  
+- 4 (+ 1) input files
+    - books.txt
+    - dates.txt (+ dates_old.txt)
+    - people.txt
+    - publishers.txt
