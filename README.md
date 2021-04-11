@@ -1,6 +1,6 @@
 # 📚 Bookpoint 📚
 
-## 📋 Description
+## 📋 Description 📋
 
 Bookpoint is a free and open source CLI solution for libraries.
 
@@ -19,7 +19,7 @@ TL;DR: Nonsense
 
 Sidenote: This is a group project for the Data Structures and Algorithms course (DSA).
 
-## 👥 Team Members
+## 👥 Team Members 👥
 - Csata Levente
 - Csillag Alex
 - Miklós Nándor
