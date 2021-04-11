@@ -5,7 +5,11 @@
 #include "../Utility/utils.h"
 
 /// This function creates a PERSON and return it using the given parameters
-Person *createPerson(char *ID, char *firstName, char *lastName, enum Nationality nationality, Date birthDate) {
+Person *createPerson(char *ID,
+                     char *firstName,
+                     char *lastName,
+                     enum Nationality nationality,
+                     Date birthDate) {
 
     /// Allocate a PERSON in the memory
     Person *person = (Person *) malloc(sizeof(Person));
@@ -95,12 +99,6 @@ Person *readPeopleFromFile(char *fileName) {
     return people;
 }
 
-void getPersonByNationality(enum Nationality nationality) {
-    for (int i = 0; i < AUTHOR_COUNT; i++)
-        if (nationality == AUTHORS[i].nationality)
-            printPerson(&AUTHORS[i]);
-}
-
 /// This method returns a PERSON with a given id
 Person *getPersonByID(char *ID) {
     for (int i = 0; i < AUTHOR_COUNT; i++) {
@@ -109,7 +107,13 @@ Person *getPersonByID(char *ID) {
     }
 }
 
-void getPersonByBirthDate(Date *date) {
+void printPersonByNationality(enum Nationality nationality) {
+    for (int i = 0; i < AUTHOR_COUNT; i++)
+        if (nationality == AUTHORS[i].nationality)
+            printPerson(&AUTHORS[i]);
+}
+
+void printPersonByBirthDate(Date *date) {
     for (int i = 0; i < AUTHOR_COUNT; i++) {
         if ((AUTHORS[i].birthDate.year == date->year) &&
             (AUTHORS[i].birthDate.month == date->month) &&
@@ -119,8 +123,7 @@ void getPersonByBirthDate(Date *date) {
     }
 }
 
-void getAdults() {
-
+void printAdults() {
     for (int i = 0; i < AUTHOR_COUNT; i++) {
         if (AUTHORS[i].birthDate.year <= 2003)
             printPerson(&AUTHORS[i]);

@@ -117,18 +117,18 @@ bool checkExistenceByAddress(char *address) {
 }
 
 /// This function returns how many PUBLISHERS were founded between two dates
-int publisherCountBetweenDates(Date date1, Date date2) {
+int publisherCountBetweenDates(Date* date1, Date* date2) {
     int count = 0;
 
     for (int i = 0; i < PUBLISHER_COUNT; i++) {
         if ((
-                    (date1.year <= PUBLISHERS[i].foundationDate.year) &&
-                    (date1.month <= PUBLISHERS[i].foundationDate.month) &&
-                    (date1.day <= PUBLISHERS[i].foundationDate.day)
+                    (date1->year <= PUBLISHERS[i].foundationDate.year) &&
+                    (date1->month <= PUBLISHERS[i].foundationDate.month) &&
+                    (date1->day <= PUBLISHERS[i].foundationDate.day)
             ) && (
-                    (PUBLISHERS[i].foundationDate.year <= date2.year) &&
-                    (PUBLISHERS[i].foundationDate.month <= date2.month) &&
-                    (PUBLISHERS[i].foundationDate.day <= date2.day)
+                    (PUBLISHERS[i].foundationDate.year <= date2->year) &&
+                    (PUBLISHERS[i].foundationDate.month <= date2->month) &&
+                    (PUBLISHERS[i].foundationDate.day <= date2->day)
             )) {
             count++;
         }
@@ -154,4 +154,13 @@ void sortPublishersByYear() {
 void destroyPublisher(Publisher *publisher) {
     free(publisher);
     publisher = NULL;
+}
+
+void printPublisher(Publisher* publisher) {
+    printf("Publisher: %s\n", publisher->name);
+    printf("\tAddress: %s\n", publisher->address);
+    printf("\tFoundation date: %i %i %i\n",
+           publisher->foundationDate.year,
+           publisher->foundationDate.month,
+           publisher->foundationDate.day);
 }

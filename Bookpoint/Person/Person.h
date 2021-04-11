@@ -17,15 +17,19 @@ typedef struct {
 } Person;
 
 /// Functions associated with this data structure
-Person* createPerson(char* ID, char* firstName, char* lastName, enum Nationality nationality, Date birthDate);
+Person* createPerson(char* ID,
+                     char* firstName,
+                     char* lastName,
+                     enum Nationality nationality,
+                     Date birthDate);
 Person* readPeopleFromFile(char* fileName);
 Person* getPersonByID(char* ID);
 
-void getPersonByNationality(enum Nationality nationality);
-void getPersonByBirthDate(Date* date);
-void getAdults();
-
+void printPersonByNationality(enum Nationality nationality);
+void printPersonByBirthDate(Date* date);
+void printAdults();
 void printPerson(Person* person);
+
 void destroyPerson(Person* person);
 
 #endif //BOOKPOINT_PERSON_H

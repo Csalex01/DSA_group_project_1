@@ -23,7 +23,15 @@ typedef struct {
 } Book;
 
 /// Functions associated with this data structure
-Book* createBook(char* ISBN, char*   title, float price, int numberOfPages, Publisher publisher, Date publishDate, Person author, enum Cover cover, bool ebook);
+Book* createBook(char* ISBN,
+                 char* title,
+                 float price,
+                 int numberOfPages,
+                 Publisher publisher,
+                 Date publishDate,
+                 Person author,
+                 enum Cover cover,
+                 bool ebook);
 Book* readBooksFromFile(char* fileName);
 
 Book* getBookBasedOnISBN(char* ISBN);

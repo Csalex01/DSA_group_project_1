@@ -19,9 +19,10 @@ Publisher* getPublisherByAddress(char* address);
 
 bool checkExistenceByAddress(char* address);
 
-int publisherCountBetweenDates(Date date1, Date date2);
+int publisherCountBetweenDates(Date* date1, Date* date2);
 
 void sortPublishersByYear();
 void destroyPublisher(Publisher* publisher);
+void printPublisher(Publisher* publisher);
 
 #endif //BOOKPOINT_PUBLISHER_H
