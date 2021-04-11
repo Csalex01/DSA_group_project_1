@@ -48,8 +48,6 @@ void activateMenu() {
                 freeVariables();
                 exit(-1);
         }
-
-        /// TODO: Clear the screen (Note: It will NOT work in the CLion simulated terminal)
     }
 }
 
@@ -348,8 +346,6 @@ void bookOperations() {
                 freeVariables();
                 exit(-1);
         }
-
-        /// TODO: Clear the screen (Note: It will NOT work in the CLion simulated terminal)
     }
 }
 
