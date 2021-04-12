@@ -29,7 +29,7 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 
 - 60 + 1 (main) functions
 
-- 7 .c source files
+- 7 .c (source) files
     - Book.c
     - Date.c
     - menu.c
@@ -38,7 +38,7 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
     - utils.c
     - main.c
   
-- 7 .h header files
+- 7 .h (header) files
     - Book.h
     - Date.h
     - menu.h
@@ -47,7 +47,7 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
     - utils.h
     - enums.h
   
-- 4 (+ 1) input files
+- 4 (+ 1, dates_old.txt) input files
     - books.txt
     - dates.txt (+ dates_old.txt)
     - people.txt
