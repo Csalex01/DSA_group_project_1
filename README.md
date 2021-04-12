@@ -20,7 +20,7 @@ TL;DR: Nonsense
 Sidenote: This is a group project for the Data Structures and Algorithms course (DSA).
 
 ## 👥 Team Members 👥
-- Csata Levente
+- Csata L. Levente
 - Csillag Alex
 - Miklós Nándor
 
