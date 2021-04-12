@@ -5,6 +5,7 @@
 #include "utils.h"
 
 /// This function is redundant, but it was used to convert dates to the right format.
+/// (it was only called once)
 void fixDate(char *fileName) {
     /// Open required files
     FILE *fin = fopen(fileName, "rt");
@@ -21,7 +22,7 @@ void fixDate(char *fileName) {
 
     /// There are 100 dates, loop through all of them
     for (int i = 0; i < 100; i++) {
-        // Read the line
+        /// Read the line
         fscanf(fin, "%s", line);
 
         /// Remove whitespaces and fix numbers beginning with 0
@@ -43,26 +44,13 @@ void fixDate(char *fileName) {
 }
 
 void freeVariables() {
-    /// TODO: Fix memory issue
-//    for(int i = 0; i < DATE_COUNT; i++)
-//        destroyDate(&DATES[i]);
+    free(DATES);
+    free(PUBLISHERS);
+    free(AUTHORS);
+    free(BOOKS);
 
-//    for(int i = 0; i < PUBLISHER_COUNT; i++)
-//        destroyPublisher(&PUBLISHERS[i]);
-//
-//    for (int i = 0; i < AUTHOR_COUNT; i++)
-//        destroyPerson(&AUTHORS[i]);
-//
-//    for(int i = 0; i < BOOK_COUNT; i++)
-//        destroyBook(&BOOKS[i]);
-
-//    free(DATES);
-//    free(PUBLISHERS);
-//    free(AUTHORS);
-//    free(BOOKS);
-
-//    DATES = NULL;
-//    PUBLISHERS = NULL;
-//    AUTHORS = NULL;
-//    BOOKS = NULL;
+    DATES = NULL;
+    PUBLISHERS = NULL;
+    AUTHORS = NULL;
+    BOOKS = NULL;
 }

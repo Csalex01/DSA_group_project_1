@@ -85,12 +85,6 @@ bool equalDates(Date *date1, Date *date2) {
            date1->day == date2->day;
 }
 
-/// This function destroys a given DATE (frees it from memory)
-void destroyDate(Date *date) {
-    free(date);
-    date = NULL;
-}
-
 /// This function sorts the BOOKS global array in ascending order
 void sortYearsByAscending() {
     for (int i = 0; i < DATE_COUNT - 1; i++) {
@@ -120,7 +114,12 @@ void sortYearsByDescending() {
 /// This function prints all DATES to the standard output
 void printDates() {
     for (int i = 0; i < DATE_COUNT; i++)
-        printf("%i %i %i\n", DATES[i].year, DATES[i].month, DATES[i].day);
+        printf("%i-%i-%i\n", DATES[i].year, DATES[i].month, DATES[i].day);
     printf("\n");
 }
 
+/// This function destroys a given DATE (frees it from memory)
+void destroyDate(Date *date) {
+    free(date);
+    date = NULL;
+}

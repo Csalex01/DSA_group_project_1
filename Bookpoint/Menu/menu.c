@@ -25,26 +25,39 @@ void activateMenu() {
         printf("> Choice: ");
 
         scanf("%i", &choice);
+        printf("\n");
 
         switch (choice) {
+
+            /// Date operations
             case 1:
                 dateOperations();
                 break;
+
+            /// Person operations
             case 2:
                 personOperations();
                 break;
+
+            /// Publisher operations
             case 3:
                 publisherOperations();
                 break;
+
+            /// Book operations
             case 4:
                 bookOperations();
                 break;
+
+            /// Exit
             case 5:
-                printf("\n=========> Goodbye! <=========\n");
+                printf("=========> Goodbye! <=========\n");
                 freeVariables();
                 exit(0);
+
+            /// DEFAULT case
             default:
-                printf("\nError: UNDEFINED USER INPUT\n");
+                printf("==> Error: UNDEFINED INPUT <==\n");
                 freeVariables();
                 exit(-1);
         }
@@ -71,11 +84,12 @@ void dateOperations() {
         printf("> Choice: ");
 
         scanf("%i", &choice);
+        printf("\n");
 
         switch (choice) {
+
             /// Print dates
             case 1:
-                printf("\n> Printing %i dates... \n", DATE_COUNT);
                 printDates();
                 break;
 
@@ -100,7 +114,7 @@ void dateOperations() {
 
                 /// DEFAULT case
             default:
-                printf("\nError: UNDEFINED USER INPUT\n");
+                printf("==> Error: UNDEFINED INPUT <==\n");
                 freeVariables();
                 exit(-1);
         }
@@ -124,6 +138,7 @@ void personOperations() {
         printf("> Choice: ");
 
         scanf("%i", &choice);
+        printf("\n");
 
         switch (choice) {
 
@@ -132,30 +147,30 @@ void personOperations() {
                 personOperations_getPersonByID();
                 break;
 
-                /// Print person by nationality
+            /// Print person by nationality
             case 2:
                 personOperations_printPeopleByNationality();
                 break;
 
-                /// Print person by birth date
+            /// Print person by birth date
             case 3:
                 personOperations_printPeopleByBirthDate();
                 break;
 
-                /// Print adults
+            /// Print adults
             case 4:
                 printf("\nAdults: \n");
                 printAdults();
                 break;
 
-                /// Back to main menu
+            /// Back to main menu
             case 5:
                 activateMenu();
                 break;
 
-                /// DEFAULT case
+            /// DEFAULT case
             default:
-                printf("\nError: UNDEFINED USER INPUT\n");
+                printf("==> Error: UNDEFINED INPUT <==\n");
                 freeVariables();
                 exit(-1);
         }
@@ -216,9 +231,9 @@ void publisherOperations() {
 
             /// Sort publishers by year
             case 6:
-                printf("\nSorting publishers by foundation date in ascending order...");
+                printf("\n> Sorting publishers by foundation date in ascending order...");
                 sortPublishersByYear();
-                printf("\nDone!\n");
+                printf("\n> Done!\n");
                 break;
 
             /// Back to main menu
@@ -226,8 +241,9 @@ void publisherOperations() {
                 activateMenu();
                 break;
 
+            /// DEFAULT case
             default:
-                printf("\nError: UNDEFINED USER INPUT\n");
+                printf("==> Error: UNDEFINED INPUT <==\n");
                 freeVariables();
                 exit(-1);
         }
@@ -259,11 +275,13 @@ void bookOperations() {
         printf("> Choice: ");
 
         scanf("%i", &choice);
+        printf("\n");
 
         switch (choice) {
+
             ///  Print all books
             case 1:
-                printf("\nAll the available books: \n");
+                printf("\n> All the available books: \n");
                 for (int i = 0; i < BOOK_COUNT; i++)
                     printBook(&BOOKS[i]);
                 break;
@@ -295,44 +313,44 @@ void bookOperations() {
 
             /// Sort books by price in ascending order
             case 7:
-                printf("\nSorting books by price in ascending order...");
+                printf("\n> Sorting books by price in ascending order...");
                 sortBooksByPriceAscending();
-                printf("\nDone!\n");
+                printf("\n> Done!\n");
                 break;
 
             /// Sort books by price in descending order
             case 8:
-                printf("\nSorting books by price in descending order...");
+                printf("\n> Sorting books by price in descending order...");
                 sortBooksByPriceDescending();
-                printf("\nDone!\n");
+                printf("\n> Done!\n");
                 break;
 
             /// Sort books by page numbers in ascending order
             case 9:
-                printf("\nSorting books by page numbers in ascending order...");
+                printf("\n> Sorting books by page numbers in ascending order...");
                 sortBooksByPageNumberAscending();
-                printf("\nDone!\n");
+                printf("\n> Done!\n");
                 break;
 
             /// Sort books by page numbers in descending order
             case 10:
-                printf("\nSorting books by page numbers in descending order...");
+                printf("\n> Sorting books by page numbers in descending order...");
                 sortBooksByPageNumberDescending();
-                printf("\nDone!\n");
+                printf("\n> Done!\n");
                 break;
 
             /// Sort books by publish year in ascending order
             case 11:
-                printf("\nSorting books by publish year in ascending order...");
+                printf("\n> Sorting books by publish year in ascending order...");
                 sortBooksByPublishYearAscending();
-                printf("\nDone!\n");
+                printf("\n> Done!\n");
                 break;
 
             /// Sort books by publish year in descending order
             case 12:
-                printf("\nSorting books by publish year in ascending order...");
+                printf("\n> Sorting books by publish year in ascending order...");
                 sortBooksByPublishYearDescending();
-                printf("\nDone!\n");
+                printf("\n> Done!\n");
                 break;
 
             /// Back to main menu
@@ -342,7 +360,7 @@ void bookOperations() {
 
             /// DEFAULT case
             default:
-                printf("\nError: UNDEFINED USER INPUT\n");
+                printf("==> Error: UNDEFINED INPUT <==\n");
                 freeVariables();
                 exit(-1);
         }
@@ -392,13 +410,13 @@ void bookOperations_priceRange() {
 void bookOperations_publishDate() {
     int year, month, day;
 
-    printf("\nYear: ");
+    printf("Year: ");
     scanf("%i", &year);
 
-    printf("\nMonth: ");
+    printf("Month: ");
     scanf("%i", &month);
 
-    printf("\nDay: ");
+    printf("Day: ");
     scanf("%i", &day);
 
     Date *date = createDate(year, month, day);
@@ -420,6 +438,7 @@ void bookOperations_cover() {
     printf("> Choice: ");
 
     scanf("%i", &choice);
+    printf("\n");
 
     switch (choice) {
 
@@ -440,7 +459,7 @@ void bookOperations_cover() {
 
         /// DEFAULT case
         default:
-            printf("\nError: UNDEFINED USER INPUT\n");
+            printf("==> Error: UNDEFINED INPUT <==\n");
             freeVariables();
             exit(-1);
     }
@@ -480,6 +499,7 @@ void personOperations_printPeopleByNationality() {
     printf("> Choice: ");
 
     scanf("%i", &choice);
+    printf("\n");
 
     switch (choice) {
 
@@ -535,7 +555,7 @@ void personOperations_printPeopleByNationality() {
 
         /// DEFAULT case
         default:
-            printf("\nError: UNDEFINED USER INPUT\n");
+            printf("==> Error: UNDEFINED INPUT <==\n");
             freeVariables();
             exit(-1);
     }
@@ -630,7 +650,7 @@ void publisherOperations_publisherCountBetweenDates() {
     minDate = createDate(minYear, minMonth, minDay);
     maxDate = createDate(maxYear, maxMonth, maxDay);
 
-    printf("\nPublisher count between %i %i %i and %i %i %i: %i\n",
+    printf("\nPublisher count between %i-%i-%i and %i-%i-%i: %i\n",
            minYear, minMonth, minDay, maxYear, maxMonth, maxDay,
            publisherCountBetweenDates(minDate, maxDate));
 }

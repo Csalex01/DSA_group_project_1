@@ -166,12 +166,13 @@ void printBook(Book *book) {
     printf("\tAuthor: %s %s\n", book->author.firstName, book->author.lastName);
     printf("\tNumber of pages: %i\n", book->numberOfPages);
     printf("\tPublisher: %s\n", book->publisher.name);
-    printf("\tPublish date: %i %i %i\n",
+    printf("\tPublish date: %i-%i-%i\n",
            book->publishDate.year,
            book->publishDate.month,
            book->publishDate.day);
 
     printf("\tCover: %i (", book->cover);
+
     switch (book->cover) {
         case SOFTCOVER:
             printf("SOFTCOVER");
@@ -185,9 +186,10 @@ void printBook(Book *book) {
         default:
             printf("UNKNOWN");
     }
+
     printf(")\n");
     printf("\tElectrically available: %s\n", (book->ebook ? "Yes" : "No"));
-    printf("\tPrice: EUR%.2f\n", book->price);
+    printf("\tPrice: EUR %.2f\n", book->price);
 
     printf("\tCoeval? ");
     if (isCoeval(book))
@@ -234,7 +236,7 @@ void printBooksBasedOnPublishDate(Date *date) {
 
 /// This function prints out all the BOOKS with a given cover type
 void printBooksBasedOnCoverType(enum Cover cover) {
-    printf("Books with the cover type of ");
+    printf("\nBooks with the cover type of ");
     switch (cover) {
         case SOFTCOVER:
             printf("SOFTCOVER");

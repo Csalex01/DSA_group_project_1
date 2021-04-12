@@ -105,6 +105,8 @@ Person *getPersonByID(char *ID) {
         if (!strcmp(AUTHORS[i].ID, ID))
             return &AUTHORS[i];
     }
+
+    return NULL;
 }
 
 void printPersonByNationality(enum Nationality nationality) {
@@ -134,7 +136,7 @@ void printAdults() {
 void printPerson(Person *person) {
     printf("ID: %s: \n", person->ID);
     printf("\tName: %s %s\n", person->firstName, person->lastName);
-    printf("\tBirth date: %i %i %i\n",
+    printf("\tBirth date: %i-%i-%i\n",
            person->birthDate.year,
            person->birthDate.month,
            person->birthDate.day);
@@ -175,8 +177,7 @@ void printPerson(Person *person) {
             printf("UNKNOWN");
     }
 
-    printf(")\n");
-    printf("\n");
+    printf(")\n\n");
 }
 
 /// This function destroys a given PERSON (frees it from the memory)

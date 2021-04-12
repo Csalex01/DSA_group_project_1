@@ -16,10 +16,12 @@ Date* readDatesFromFile(char* fileName);
 
 bool equalDates(Date* date1, Date* date2);
 
-void destroyDate(Date* date);
+
 void sortYearsByAscending();
 void sortYearsByDescending();
 
 void printDates();
+
+void destroyDate(Date* date);
 
 #endif //BOOKPOINT_DATE_H
