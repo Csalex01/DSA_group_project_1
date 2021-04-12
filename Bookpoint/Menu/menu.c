@@ -128,7 +128,7 @@ void personOperations() {
     while (true) {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
-        printf("        -> AUTHORS <-        \n\n");
+        printf("        -> AUTHORS <-      \n\n");
         printf("> 1. Get person by ID (Case sensitive)\n");
         printf("> 2. Print person by nationality\n");
         printf("> 3. Print person by birth date\n");
@@ -184,7 +184,7 @@ void publisherOperations() {
     while(true) {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
-        printf("       -> PUBLISHERS <-        \n\n");
+        printf("       -> PUBLISHERS <-    \n\n");
         printf("> 1. Print all publishers\n");
         printf("> 2. Get publisher by name (Case sensitive)\n");
         printf("> 3. Get publisher by address (Case sensitive)\n");
@@ -257,7 +257,7 @@ void bookOperations() {
     while (true) {
         printf("\n");
         printf("========> BOOKPOINT <========\n");
-        printf("         -> BOOKS <-        \n\n");
+        printf("         -> BOOKS <-       \n\n");
         printf("> 1. Print all books\n");
         printf("> 2. Print books based on author ID (Case sensitive)\n");
         printf("> 3. Print books based on page numbers\n");
@@ -430,7 +430,7 @@ void bookOperations_cover() {
 
     printf("\n");
     printf("========> BOOKPOINT <========\n");
-    printf("         -> COVER <-        \n\n");
+    printf("         -> COVER <-       \n\n");
     printf("> 1. Softcover\n");
     printf("> 2. Hardcover with Imagewrap\n");
     printf("> 3. Hardcover with Dustjacket\n");
@@ -484,7 +484,7 @@ void personOperations_printPeopleByNationality() {
 
     printf("\n");
     printf("========> BOOKPOINT <========\n");
-    printf("      -> NATIONALITY <-      \n\n");
+    printf("      -> NATIONALITY <-     n\n");
     printf("> 1. Hungarian\n");
     printf("> 2. Romanian\n");
     printf("> 3. German\n");
