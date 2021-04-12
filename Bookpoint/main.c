@@ -10,24 +10,28 @@ int main() {
     PUBLISHER_COUNT = 0;
     AUTHOR_COUNT = 0;
 
+    // Reading DATES from file "dates.txt"
     DATES = readDatesFromFile("dates.txt");
     if(!DATES) {
         printf("An error occured while allocating memory for vector DATES!");
         return -1;
     }
 
+    // Reading PUBLISHERS from file "publishers.txt"
     PUBLISHERS = readPublishersFromFile("publishers.txt");
     if(!PUBLISHERS) {
         printf("An error occured while allocating memory for vector PUBLISHERS!");
         return -2;
     }
 
+    // Reading AUTHORS from "people.txt"
     AUTHORS = readPeopleFromFile("people.txt");
     if(!AUTHORS) {
         printf("An error occured while allocating memory for vector AUTHORS!");
         return -3;
     }
 
+    // Reading BOOKS from "books.txt"
     BOOKS = readBooksFromFile("books.txt");
     if(!BOOKS) {
         printf("An error occured while allocating memory for vector BOOKS!");

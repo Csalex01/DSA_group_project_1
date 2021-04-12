@@ -43,6 +43,7 @@ void fixDate(char *fileName) {
     fclose(fout);
 }
 
+/// This function deallocates all the allocated memory
 void freeVariables() {
     free(DATES);
     free(PUBLISHERS);

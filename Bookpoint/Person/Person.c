@@ -109,12 +109,14 @@ Person *getPersonByID(char *ID) {
     return NULL;
 }
 
+/// This function prints out all PERSON with a given nationality
 void printPersonByNationality(enum Nationality nationality) {
     for (int i = 0; i < AUTHOR_COUNT; i++)
         if (nationality == AUTHORS[i].nationality)
             printPerson(&AUTHORS[i]);
 }
 
+/// This function prints out all PERSON with a given birth date
 void printPersonByBirthDate(Date *date) {
     for (int i = 0; i < AUTHOR_COUNT; i++) {
         if ((AUTHORS[i].birthDate.year == date->year) &&
@@ -125,9 +127,18 @@ void printPersonByBirthDate(Date *date) {
     }
 }
 
+/// This function prints out all PERSON whose age is bigger, or equal to 18
 void printAdults() {
+
+    /// Gets the current time
+    time_t now;
+    time(&now);
+    struct tm *local = localtime(&now);
+
     for (int i = 0; i < AUTHOR_COUNT; i++) {
-        if (AUTHORS[i].birthDate.year <= 2003)
+        /// If the current year minus the birth year is bigger or equal to 18
+        if(local->tm_year - AUTHORS[i].birthDate.year + 1900 >= 18)
+            /// Then they are an adult
             printPerson(&AUTHORS[i]);
     }
 }

@@ -121,6 +121,7 @@ int publisherCountBetweenDates(Date* date1, Date* date2) {
     int count = 0;
 
     for (int i = 0; i < PUBLISHER_COUNT; i++) {
+        /// date1 <= PUBLISHERS[i].foundationYear <= date2
         if ((
                     (date1->year <= PUBLISHERS[i].foundationDate.year) &&
                     (date1->month <= PUBLISHERS[i].foundationDate.month) &&
