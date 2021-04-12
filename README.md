@@ -27,7 +27,7 @@ Sidenote: This is a group project for the Data Structures and Algorithms course 
 ## 📋 Statistics 📋
 - ~1750 lines of code
 
-- 61 functions
+- 60 + 1 (main) functions
 
 - 7 .c source files
     - Book.c
