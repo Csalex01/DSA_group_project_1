@@ -159,9 +159,9 @@ void destroyPublisher(Publisher *publisher) {
 
 /// This function prints out a given publisher
 void printPublisher(Publisher* publisher) {
-    printf("Publisher: %s\n", publisher->name);
-    printf("\tAddress: %s\n", publisher->address);
-    printf("\tFoundation date: %i-%i-%i\n\n",
+    printf("Publisher: \t\t\t%s\n", publisher->name);
+    printf("\tAddress: \t\t%s\n", publisher->address);
+    printf("\tFoundation date: \t%i-%i-%i\n\n",
            publisher->foundationDate.year,
            publisher->foundationDate.month,
            publisher->foundationDate.day);

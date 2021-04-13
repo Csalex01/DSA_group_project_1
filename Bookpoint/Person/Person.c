@@ -145,13 +145,13 @@ void printAdults() {
 
 /// This function prints a given PERSON to the standard output
 void printPerson(Person *person) {
-    printf("ID: %s: \n", person->ID);
-    printf("\tName: %s %s\n", person->firstName, person->lastName);
-    printf("\tBirth date: %i-%i-%i\n",
+    printf("ID: \t%s\n", person->ID);
+    printf("\tName: \t\t%s %s\n", person->firstName, person->lastName);
+    printf("\tBirth date: \t%i-%i-%i\n",
            person->birthDate.year,
            person->birthDate.month,
            person->birthDate.day);
-    printf("\tNationality: %i (", person->nationality);
+    printf("\tNationality: \t%i (", person->nationality);
 
     switch (person->nationality) {
         case HUNGARIAN:

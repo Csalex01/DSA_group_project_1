@@ -161,17 +161,17 @@ bool isEbook(Book *book) {
 
 /// This function prints a given BOOK to the standard output
 void printBook(Book *book) {
-    printf("ISBN: %s\n", book->ISBN);
-    printf("\tTitle: %s\n", book->title);
-    printf("\tAuthor: %s %s\n", book->author.firstName, book->author.lastName);
-    printf("\tNumber of pages: %i\n", book->numberOfPages);
-    printf("\tPublisher: %s\n", book->publisher.name);
-    printf("\tPublish date: %i-%i-%i\n",
+    printf("ISBN: \t\t\t\t%s\n", book->ISBN);
+    printf("\tTitle: \t\t\t%s\n", book->title);
+    printf("\tAuthor: \t\t%s %s\n", book->author.firstName, book->author.lastName);
+    printf("\tNumber of pages: \t%i\n", book->numberOfPages);
+    printf("\tPublisher: \t\t%s\n", book->publisher.name);
+    printf("\tPublish date: \t\t%i-%i-%i\n",
            book->publishDate.year,
            book->publishDate.month,
            book->publishDate.day);
 
-    printf("\tCover: %i (", book->cover);
+    printf("\tCover: \t\t\t%i (", book->cover);
 
     switch (book->cover) {
         case SOFTCOVER:
@@ -188,10 +188,10 @@ void printBook(Book *book) {
     }
 
     printf(")\n");
-    printf("\tElectrically available: %s\n", (book->ebook ? "Yes" : "No"));
-    printf("\tPrice: EUR %.2f\n", book->price);
+    printf("\tE-book? \t\t%s\n", (book->ebook ? "Yes" : "No"));
+    printf("\tPrice: \t\t\tEUR %.2f\n", book->price);
 
-    printf("\tCoeval? ");
+    printf("\tCoeval? \t\t");
     if (isCoeval(book))
         printf("Yes");
     else
