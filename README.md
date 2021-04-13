@@ -1,5 +1,7 @@
 # 📚 Bookpoint 📚
 
+### Project status: Complete
+
 ## 📖 Description 📖
 
 Bookpoint is a free and open source CLI solution for libraries.
