@@ -484,7 +484,7 @@ void personOperations_printPeopleByNationality() {
 
     printf("\n");
     printf("========> BOOKPOINT <========\n");
-    printf("      -> NATIONALITY <-     n\n");
+    printf("      -> NATIONALITY <-     \n\n");
     printf("> 1. Hungarian\n");
     printf("> 2. Romanian\n");
     printf("> 3. German\n");
