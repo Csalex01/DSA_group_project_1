@@ -30,6 +30,6 @@ void printPersonByBirthDate(Date* date);
 void printAdults();
 void printPerson(Person* person);
 
-void destroyPerson(Person* person);
+void killPerson(Person* person);
 
 #endif //BOOKPOINT_PERSON_H

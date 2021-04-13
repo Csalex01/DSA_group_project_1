@@ -192,7 +192,7 @@ void printPerson(Person *person) {
 }
 
 /// This function destroys a given PERSON (frees it from the memory)
-void destroyPerson(Person *person) {
+void killPerson(Person *person) {
     free(person);
     person = NULL;
 }
